@@ -1,0 +1,186 @@
+/* ---------------------------- font size -------------------------- */
+
+.tab,
+#sidepanel div,
+#marketing section p,
+#concept p,
+#modal legend,
+#modal input,
+.btn.btn__dark,
+#calc label,
+.menu__item p.menu__item--text,
+.copyright,
+footer label {
+  font-size: var(--small);
+}
+.tabpanel p,
+#calc label,
+.menu__item h3,
+.menu__item--price-total,
+.menu__item--price-total span,
+.copyright p,
+.copyright a,
+.social a,
+footer legend {
+  font-size: var(--medium);
+}
+.btn,
+nav a,
+#tablist__label,
+.tab[aria-selected="true"],
+#offer span,
+#modal__close,
+#calc input,
+#calc__total,
+.menu__item--price p,
+footer input {
+  font-size: var(--big);
+}
+#concept__gallery--counter {
+  font-size: var(--medium-4k);
+}
+h1,
+.slogan,
+.title,
+#concept h3,
+#concept__call--label {
+  font-size: var(--large);
+}
+#timer span,
+#slide__current,
+#calc__total span {
+  font-size: var(--huge);
+}
+
+@media only screen and (min-width: 2550px) {
+  #modal label,
+  .btn.btn__dark {
+    font-size: var(--medium);
+  }
+  .btn,
+  .tab,
+  #sidepanel div,
+  #marketing section p,
+  #timer__wrapper div,
+  #concept p,
+  legend,
+  #calc label,
+  #calc__total p,
+  .menu__item,
+  .menu__item p.menu__item--text,
+  .menu__item--price p,
+  .menu__item--price-total,
+  .menu__item--price-total span,
+  footer label,
+  footer input,
+  .copyright p,
+  .copyright a,
+  .social a span {
+    font-size: var(--medium-4k);
+  }
+  .tabpanel p,
+  #calc input,
+  .menu__item h3 {
+    font-size: var(--large);
+  }
+  h1,
+  nav a,
+  #tablist__label,
+  .tab[aria-selected="true"] {
+    font-size: var(--big-4k);
+  }
+  .slogan,
+  .title,
+  #concept h3,
+  #concept__gallery--counter {
+    font-size: var(--large-4k);
+  }
+  #timer span,
+  #slide__current,
+  #calc__total span {
+    font-size: var(--huge-4k);
+  }
+}
+
+@media only screen and (min-width: 3800px) {
+  .btn,
+  .tab,
+  #sidepanel div,
+  #marketing section p,
+  #timer__wrapper div,
+  #concept p,
+  .menu__item,
+  .menu__item h3,
+  .menu__item p.menu__item--text,
+  .menu__item--price p,
+  .menu__item--price-total,
+  .menu__item--price-total span,
+  footer a,
+  footer input,
+  .copyright {
+    font-size: var(--large);
+  }
+  .tabpanel p,
+  #calc legend,
+  #calc__total p,
+  footer legend {
+    font-size: var(--big-4k);
+  }
+  nav a,
+  #tablist__label,
+  .tab[aria-selected="true"],
+  #concept__call--label {
+    font-size: var(--large-4k);
+  }
+  h1,
+  .title,
+  .slogan,
+  #concept h3 {
+    font-size: var(--huge);
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  .tabpanel p {
+    font-size: var(--small);
+  }
+  h1,
+  .slogan,
+  .title,
+  #concept h3 {
+    font-size: var(--medium-4k);
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  .menu__item--price-total {
+    font-size: var(--small);
+  }
+  h1 {
+    font-size: var(--large);
+  }
+  #modal__close {
+    /* font-size: var(--medium); */
+  }
+  #modal legend,
+  #modal label {
+    font-size: var(--smallest);
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  footer a,
+  footer label,
+  footer input {
+    font-size: var(--smallest);
+  }
+  .btn,
+  #calc__total p,
+  .menu__item h3,
+  .menu__item--price p {
+    font-size: var(--small);
+  }
+  h1 {
+    font-size: var(--medium-4k);
+  }
+}

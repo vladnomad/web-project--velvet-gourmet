@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0">
+        <title>
+            The Velvet Gourmet catering
+        </title>
+        <meta name="description" 
+              content="Catering tailored to your needs and lifestyle. Save time and money with The Velvet Gourmet. Enjoy wholesome meals delivered right to your door. Order today!">
+        <link rel="icon" 
+              type="image/x-icon" 
+              href="icons/logo.svg">
+        <link rel="stylesheet" 
+              type="text/css"
+              href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,400;0,500&display=swap">
+        <link rel="stylesheet" 
+              href="styles.css">
+    </head>
+    <body>
+        <a href="#main"
+           class="skip__nav invisible">
+           Skip navigation
+        </a>
+        <header class="flex align-center justify-between">
+            <div class="header__left flex">
+                <div class="flex align-center">
+                    <img src="icons/logo.svg" 
+                         alt="The Velvet Gourmet Logo. Flat coloured icons of food and cooking accessories arranged in a circle" />
+                    <h1 class="relative c-default">
+                        The Velvet Gourmet
+                    </h1>
+                </div>
+            </div>
+            <nav class="flex align-center">
+                <a href="#" 
+                   class="relative">
+                   Food Delivery
+                </a>
+                <a href="#" 
+                   class="relative">
+                   Catering
+                </a>
+            </nav>
+            <div class="perspective flex align-center justify-center">
+                <button class="btn btn__white c-pointer flex align-center">
+                    Contact Us
+                </button>
+            </div>
+        </header>
+
+        <main id="#main">
+            <article aria-label="Get to know our menu options" 
+                     id="tabmenu" 
+                     class="relative">
+                <div class="bg__beige"></div>
+                <div class="container">
+                    <div id="tabmenu__wrapper" 
+                         class="flex">
+                        <div id="tablist__wrapper">
+                            <h2 id="tablist__label"
+                                class="relative">
+                                Choose your favourite
+                            </h2>
+                            <section role="tablist" 
+                                     aria-labelledby="tablist__label" 
+                                     class="tablist flex justify-center">
+                                <button role="tab" 
+                                        aria-selected="true" 
+                                        aria-controls="tabpanel--1" 
+                                        tabindex="0" 
+                                        id="tab--1" 
+                                        class="tab flex relative c-pointer">
+                                        Premium
+                                        <span> menu</span>
+                                </button>
+                                <button role="tab" 
+                                        aria-selected="false" 
+                                        aria-controls="tabpanel--2" 
+                                        tabindex="0"
+                                        id="tab--2" 
+                                        class="tab flex relative c-pointer">
+                                        Fitness
+                                        <span> menu</span>
+                                </button>
+                                <button role="tab" 
+                                        aria-selected="false" 
+                                        aria-controls="tabpanel--3" 
+                                        tabindex="0" 
+                                        id="tab--3" 
+                                        class="tab flex relative c-pointer">
+                                        Vegan
+                                        <span> menu</span>
+                                </button>
+                                <button role="tab" 
+                                        aria-selected="false" 
+                                        aria-controls="tabpanel--4" 
+                                        tabindex="0" 
+                                        id="tab--4" 
+                                        class="tab flex relative c-pointer">
+                                        Balanced
+                                        <span> menu</span>
+                                </button>
+                            </section>
+                        </div>
+                        <section role="tabpanel"  
+                                 aria-labelledby="tab--1" 
+                                 id="tabpanel--1" 
+                                 class="tabpanel relative">
+                            <img src="img/tab/tab__1920--1.jpg" 
+                                 alt="Assorted delicious grilled seafood, meat and fruits, served with multiple sauces and a bottle of wine on the wooden table" 
+                                 srcset="img/tab/tab__428--1.jpg 351w, 
+                                         img/tab/tab__810--1.jpg 513w, 
+                                         img/tab/tab__1080--1.jpg 592w, 
+                                         img/tab/tab__1366--1.jpg 812w, 
+                                         img/tab/tab__1920--1.jpg 988w, 
+                                         img/tab/tab__2550--1.jpg 1318w, 
+                                         img/tab/tab__3800--1.jpg 1976w"
+                                 sizes="(max-width: 429px) 351px, 
+                                        (max-width: 811px) 513px, 
+                                        (max-width: 1081px) 592px, 
+                                        (max-width: 1367px) 812px, 
+                                        (max-width: 1921px) 988px, 
+                                        (max-width: 2551px) 1318px, 
+                                        1976px" />
+                            <p class="glass absolute">
+                                In the premium menu, we use not only beautiful packaging design, but also 'haute cuisine' cooking techniques and ingredients. Red fish, seafood, fruits - a dinner at the restaurant without going out!
+                            </p>
+                        </section>
+                        <section role="tabpanel"
+                                 aria-labelledby="tab--2" 
+                                 id="tabpanel--2" 
+                                 class="tabpanel relative" 
+                                 hidden >
+                            <img src="img/tab/tab__1920--2.jpg" 
+                                 alt="Assorted delicious cheese and nuts, bruschette with yogurt, pesto and bresaola, and a plate of spaghetti on the marble table" 
+                                 srcset="img/tab/tab__428--2.jpg 351w, 
+                                         img/tab/tab__810--2.jpg 513w, 
+                                         img/tab/tab__1080--2.jpg 592w, 
+                                         img/tab/tab__1366--2.jpg 812w, 
+                                         img/tab/tab__1920--2.jpg 988w, 
+                                         img/tab/tab__2550--2.jpg 1318w, 
+                                         img/tab/tab__3800--2.jpg 1976w"
+                                 sizes="(max-width: 429px) 351px, 
+                                        (max-width: 811px) 513px, 
+                                        (max-width: 1081px) 592px, 
+                                        (max-width: 1367px) 812px, 
+                                        (max-width: 1921px) 988px, 
+                                        (max-width: 2551px) 1318px, 
+                                        1976px" />
+                            <p class="glass absolute">
+                                The Fitness menu is a new approach to cooking - more fresh vegetables and fruits. For people who are into sports, being active and healthy. This is a completely new product, providing high quality food for a good price!
+                            </p>
+                        </section>
+                        <section role="tabpanel"
+                                 aria-labelledby="tab--3" 
+                                 id="tabpanel--3" 
+                                 class="tabpanel relative" 
+                                 hidden >
+                            <img src="img/tab/tab__1920--3.jpg" 
+                                 alt="Indonesian vegan plate of vegetables cut in small pieces with quinoa and komosa served with sauce" 
+                                 srcset="img/tab/tab__428--3.jpg 351w, 
+                                         img/tab/tab__810--3.jpg 513w, 
+                                         img/tab/tab__1080--3.jpg 592w, 
+                                         img/tab/tab__1366--3.jpg 812w, 
+                                         img/tab/tab__1920--3.jpg 988w, 
+                                         img/tab/tab__2550--3.jpg 1318w, 
+                                         img/tab/tab__3800--3.jpg 1976w"
+                                 sizes="(max-width: 429px) 351px, 
+                                        (max-width: 811px) 513px, 
+                                        (max-width: 1081px) 592px, 
+                                        (max-width: 1367px) 812px, 
+                                        (max-width: 1921px) 988px, 
+                                        (max-width: 2551px) 1318px, 
+                                        1976px" />
+                            <p class="glass absolute">
+                                Our special Vegan menu has a thorough selection of ingredients - a plant-based diet avoiding all animal foods such as meat, dairy, eggs and honey. Complete harmony with oneself and nature in every element!
+                            </p>
+                        </section>
+                        <section role="tabpanel"
+                                 aria-labelledby="tab--4" 
+                                 id="tabpanel--4" 
+                                 class="tabpanel relative" 
+                                 hidden >
+                            <img src="img/tab/tab__1920--4.jpg" 
+                                 alt="Two dishes at the restaurant table. Grilled steak with sweet potato fries and sauces. Assorted vegetables, buckwheat and crouton, served with balsamic vinegar" 
+                                 srcset="img/tab/tab__428--4.jpg 351w, 
+                                         img/tab/tab__810--4.jpg 513w, 
+                                         img/tab/tab__1080--4.jpg 592w, 
+                                         img/tab/tab__1366--4.jpg 812w, 
+                                         img/tab/tab__1920--4.jpg 988w, 
+                                         img/tab/tab__2550--4.jpg 1318w, 
+                                         img/tab/tab__3800--4.jpg 1976w"
+                                 sizes="(max-width: 429px) 351px, 
+                                        (max-width: 811px) 513px, 
+                                        (max-width: 1081px) 592px, 
+                                        (max-width: 1367px) 812px, 
+                                        (max-width: 1921px) 988px, 
+                                        (max-width: 2551px) 1318px, 
+                                        1976px" />
+                            <p class="glass absolute">
+                                The "Balanced" menu is a great way to manage your diet. We balance the menu using your personal need for calories, protein, fat and carbohydrates and create healthy and rich menu for you to enjoy.
+                            </p>
+                        </section> 
+                    </div>
+                    <p class="slogan" 
+                       aria-description="Company slogan">
+                       Live your life to the fullest!
+                    </p>
+                </div>
+            </article>
+
+            <aside aria-label="Side panel" 
+                   id="sidepanel" 
+                   class="flex align-center justify-between">
+                <div class="relative c-default">
+                    <span class="flex">
+                        Social Media
+                    </span>
+                </div>
+                <hr>
+                <a href="#" 
+                   aria-label="Instagram">
+                    <img src="icons/instagram.svg" 
+                         alt="" />
+                </a>
+                <a href="#" 
+                   aria-label="Facebook">
+                    <img src="icons/facebook.svg" 
+                         alt="" />
+                </a>
+            </aside>
+
+            <hr>
+
+            <article aria-label="Special Offers" 
+                     id="marketing"
+                     class="relative">
+                <div class="container flex">
+                    <section aria-label="Offer description" 
+                             id="offer">
+                        <h2 class="title">
+                            Limited Time Offer:
+                        </h2>
+                        <p>
+                            Join a community of people free of their day-to-day routine, becoming more productive while enjoying The Velvet Gourmet couisine.
+                        </p>
+                        <p>
+                            Get
+                            <span> 20% </span>
+                            off 1-week deliveries!
+                            <br>
+                            The offer is only available until 31st October.
+                        </p>
+                    </section>
+                    <section aria-label="Offer timer" 
+                             id="timer">
+                        <h2 class="title">
+                            Time remaining:
+                        </h2>
+                        <div id="timer__wrapper" 
+                             class="perspective flex align-center justify-between">
+                            <div class="flex align-center c-default">
+                                <span id="days" class="c-default">
+                                    12
+                                </span>
+                                <p>days</p>
+                            </div>
+                            <div class="flex align-center c-default">
+                                <span id="hours" class="c-default">
+                                    20
+                                </span>
+                                <p>hours</p>
+                            </div>
+                            <div class="flex align-center c-default">
+                                <span id="minutes" class="c-default">
+                                    56
+                                </span>
+                                <p>minutes</p>
+                            </div>
+                            <div class=" flex align-center c-default">
+                                <span id="seconds" class="c-default">
+                                    20
+                                </span>
+                                <p>seconds</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+            <hr>
+
+            <article aria-label="The Velvet Gourmet's concept" 
+                     id="concept" 
+                     class="relative">
+                <div id="concept__main--container"
+                     class="container relative flex justify-between">
+                    <article aria-labelledby="concept__main--label" 
+                             id="concept__main">
+                        <h2 id="concept__main--label"
+                            class="title">
+                            Thoughtfull approach to catering
+                        </h2>
+                        <p>
+                            Our main concept is proper nutrition. It can and should be simple and tasty. We are not just another food delivery, we are a service, that makes your life healthier and easier while also saving your time! We took on all the calculations of calorie content, portions and other important, but boring aspects, so that you get only nutritious, varied and fine cooked food that we bring right under the door.
+                        </p>
+                        <h3>
+                            Quick and healthy
+                        </h3>
+                        <p>
+                            Cooking at home takes a lot of effort, time and nerves. With our scheduled morning delivery you get meals for the whole day, so that you don't need to adjust and waste time that you could spend on creative work, meetings or training during the day. And be sure of the quality of the product!
+                        </p>
+                        <h3>
+                            The right diet
+                        </h3>
+                        <p>
+                            We have developed a formula to proper nutrition, taking into account the nutrient balance, correct ingredient preparation and finest taste in order to complement your physiology and lifestyle.
+                        </p>
+                    </article>
+                    <section aria-label="Call request with a modal form">
+                        <button class="btn btn__call absolute c-pointer flex align-center">
+                            <img src="icons/call.png" 
+                                    alt="Green circle with a phone icon" />
+                        </button>
+                        <span id="concept__call--label" 
+                              class="absolute">
+                              Request a Call
+                        </span>
+                        <aside aria-label="Modal window with contact form" 
+                               id="modal">
+                            <div id="modal__container">
+                                <div id="modal__wrapper" 
+                                     class="glass relative">
+                                    <form action="#"
+                                        method="get">
+                                        <p id="modal__close" 
+                                           class="absolute c-pointer">
+                                            &#x2715;
+                                        </p>
+                                        <fieldset class="flex">
+                                            <legend>
+                                                Provide your contact information and we will call as quickly as possible!
+                                            </legend>
+                                            <label>
+                                                Name
+                                                <input type="text" 
+                                                        id="input__modal--name" 
+                                                        class="modal__input btn flex align-center" 
+                                                        required />
+                                            </label>
+                                            <label>
+                                                Phone number
+                                                <input type="tel" 
+                                                        id="input__modal--phone" 
+                                                        class="modal__input btn flex align-center" 
+                                                        required />
+                                            </label>
+                                            <button class="btn btn__dark flex c-pointer align-center">
+                                                Submit
+                                            </button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </aside>
+                    </section>
+                </div>
+                <div id="concept__gallery--container" 
+                     class="container flex justify-between">
+                    <section aria-label="Image gallery" 
+                             id="concept__gallery" 
+                             class="flex">
+                        <div id="concept__gallery--counter"
+                             class="absolute">
+                            <span id="slide__current" 
+                                class="relative c-default">
+                                03
+                            </span>
+                            <span class="c-default">
+                                /
+                            </span>
+                            <span class="c-default">
+                                04
+                            </span>
+                        </div>
+                        <div id="concept__gallery--nav" 
+                             class="flex align-center justify-between absolute">
+                            <button class="relative flex align-center c-pointer">
+                                <img src="icons/back.png" 
+                                     alt="Previous image"
+                                     class="relative" />
+                                <div class="bg__gallery--nav absolute"></div>
+                            </button>
+                            <button id="concept__gallery--btn-right" 
+                                    class="relative flex align-center c-pointer">
+                                <img src="icons/forward.png" 
+                                     alt="Next image"
+                                     class="relative" />
+                                <div class="bg__gallery--nav absolute"></div>
+                            </button>
+                        </div>
+                        <div id="concept__gallery--slider">
+                            <div id="concept__gallery--slide-1">
+                                <img src="img/slider/slider__1920--1.jpg"
+                                     class="absolute" 
+                                     alt="Dining hall with designer lamps and tables with salads, porridge, boiled eggs, baguettes and drinks" 
+                                     srcset="img/slider/slider__428--1.jpg 351w, 
+                                             img/slider/slider__810--1.jpg 513w, 
+                                             img/slider/slider__1080--1.jpg 402w, 
+                                             img/slider/slider__1366--1.jpg 480w, 
+                                             img/slider/slider__1920--1.jpg 648w, 
+                                             img/slider/slider__2550--1.jpg 1000w, 
+                                             img/slider/slider__3800--1.jpg 1704w"
+                                     sizes="(max-width: 429px) 351px, 
+                                            (max-width: 811px) 513px, 
+                                            (max-width: 1081px) 402px, 
+                                            (max-width: 1367px) 480px, 
+                                            (max-width: 1921px) 648px, 
+                                            (max-width: 2551px) 1000px, 
+                                            1704px" />
+                            </div>
+                            <div id="concept__gallery--slide-2" 
+                                 hidden >
+                                <img src="img/slider/slider__1920--2.jpg"
+                                     class="absolute"  
+                                     alt="Chef adding sauce to multiple plates with grilled lobster" 
+                                     srcset="img/slider/slider__428--2.jpg 351w, 
+                                             img/slider/slider__810--2.jpg 513w, 
+                                             img/slider/slider__1080--2.jpg 402w, 
+                                             img/slider/slider__1366--2.jpg 480w, 
+                                             img/slider/slider__1920--2.jpg 648w, 
+                                             img/slider/slider__2550--2.jpg 1000w, 
+                                             img/slider/slider__3800--2.jpg 1704w"
+                                     sizes="(max-width: 429px) 351px, 
+                                            (max-width: 811px) 513px, 
+                                            (max-width: 1081px) 402px, 
+                                            (max-width: 1367px) 480px, 
+                                            (max-width: 1921px) 648px, 
+                                            (max-width: 2551px) 1000px, 
+                                            1704px" />
+                            </div>
+                            <div id="concept__gallery--slide-3" 
+                                 hidden >
+                                <img src="img/slider/slider__1920--3.jpg"
+                                class="absolute"  
+                                alt="Top view of several healthy food dishes in plastic boxes for catering" 
+                                srcset="img/slider/slider__428--3.jpg 351w, 
+                                        img/slider/slider__810--3.jpg 513w, 
+                                        img/slider/slider__1080--3.jpg 402w, 
+                                        img/slider/slider__1366--3.jpg 480w, 
+                                        img/slider/slider__1920--3.jpg 648w, 
+                                        img/slider/slider__2550--3.jpg 1000w, 
+                                        img/slider/slider__3800--3.jpg 1704w"
+                                sizes="(max-width: 429px) 351px, 
+                                       (max-width: 811px) 513px, 
+                                       (max-width: 1081px) 402px, 
+                                       (max-width: 1367px) 480px, 
+                                       (max-width: 1921px) 648px, 
+                                       (max-width: 2551px) 1000px, 
+                                       1704px" />
+                            </div>
+                            <div id="concept__gallery--slide-4" 
+                                 hidden >
+                                <img src="img/slider/slider__1920--4.jpg"
+                                class="absolute" 
+                                alt="Top view of fruits around a catering plastic box with grilled chicken and vegetables, and saffron rice" 
+                                srcset="img/slider/slider__428--4.jpg 351w, 
+                                        img/slider/slider__810--4.jpg 513w, 
+                                        img/slider/slider__1080--4.jpg 402w, 
+                                        img/slider/slider__1366--4.jpg 480w, 
+                                        img/slider/slider__1920--4.jpg 648w, 
+                                        img/slider/slider__2550--4.jpg 1000w, 
+                                        img/slider/slider__3800--4.jpg 1704w"
+                                sizes="(max-width: 429px) 351px, 
+                                       (max-width: 811px) 513px, 
+                                       (max-width: 1081px) 402px, 
+                                       (max-width: 1367px) 480px, 
+                                       (max-width: 1921px) 648px, 
+                                       (max-width: 2551px) 1000px, 
+                                       1704px" />
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+            <hr>
+
+            <article id="calc" 
+                     aria-labelledby="calc__label">
+                <div class="container">
+                    <h2 id="calc__label"
+                        class="title">Calculate your personal need for calories</h2>
+                    <img src="icons/logo.svg" 
+                         alt="" 
+                         class="bg__logo absolute">
+                    <div id="calc__wrapper" 
+                         class="glass">
+                        <form action="#" 
+                              method="get"
+                              class="flex" 
+                              aria-label="User data for calculation" 
+                              aria-description="Select one of the options in case of radio buttons and provide your physical parameters to calculate daily calorie need">
+                            <fieldset id="calc__small" 
+                                      class="relative flex">
+                                <legend class="subtitle">
+                                    Sex assigned at birth
+                                </legend>
+                                <label class="flex align-center">
+                                    Female
+                                    <input type="radio" 
+                                           name="input__group--sex"
+                                           class="relative c-pointer flex align-center js-active"
+                                           checked />
+                                </label>
+                                <label class="flex align-center">
+                                    Male
+                                    <input type="radio" 
+                                           name="input__group--sex"
+                                           class="relative c-pointer flex align-center" />
+                                </label>
+                            </fieldset>
+                            <fieldset id="calc__big" 
+                                      class="relative flex">
+                                <legend class="subtitle">
+                                    Your constitution
+                                </legend>
+                                <label class="flex align-center">
+                                    Height (cm)
+                                    <input type="text"
+                                           inputmode="numeric" 
+                                           class="c-pointer flex align-center" />
+                                </label>
+                                <label class="flex align-center">
+                                    Weight (kg)
+                                    <input type="text"
+                                           inputmode="numeric" 
+                                           class="c-pointer flex align-center" />
+                                </label>
+                                <label class="flex align-center">
+                                    Age
+                                    <input type="text"
+                                           inputmode="numeric" 
+                                           class="c-pointer flex align-center" />
+                                </label>
+                            </fieldset>
+                            <fieldset id="calc__medium" 
+                                      class="relative flex">
+                                <legend class="subtitle">
+                                    Choose your physical activity
+                                </legend>
+                                <label class="flex align-center">
+                                    Low
+                                    <input type="radio" 
+                                           name="input__group--activity"
+                                           class="relative c-pointer flex align-center" />
+                                </label>
+                                <label class="flex align-center">
+                                    Moderate
+                                    <input type="radio" 
+                                           name="input__group--activity"
+                                           class="relative c-pointer flex align-center js-active"
+                                           checked />
+                                </label>
+                                <label class="flex align-center">
+                                    High
+                                    <input type="radio" 
+                                           name="input__group--activity"
+                                           class="relative c-pointer flex align-center" />
+                                </label>
+                            </fieldset>
+                        </form>
+                        <hr>
+                        <section aria-label="Calculation result"
+                                 id="calc__total" 
+                                 class="flex align-center justify-between">
+                            <p class="subtitle">
+                                Your daily calorie rate:
+                            </p>
+                            <p class="flex align-center relative">
+                                <span>2700</span>
+                                 kcal
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </article>
+
+            <article aria-labelledby="menu__label" 
+                     id="menu"
+                     class="flex relative">
+                <div class="bg__beige"></div>
+                <h2 id="menu__label" 
+                    class="title">
+                    Our bestseller menus
+                </h2>
+                <div id="menu__wrapper">
+                    <div class="container perspective flex">
+                        <article aria-labelledby="menu__item--label-1" 
+                                 class="menu__item"
+                                 id="menu__item--left">
+                            <img src="img/menu/menu__1920--1.jpg" 
+                                 alt="Assorted delicious cheese and nuts, bruschette with yogurt, pesto and bresaola, and a plate of spaghetti on the marble table" 
+                                 srcset="img/menu/menu__428--1.jpg 338w, 
+                                         img/menu/menu__810--1.jpg 427w, 
+                                         img/menu/menu__1366--1.jpg 350w, 
+                                         img/menu/menu__1920--1.jpg 420w, 
+                                         img/menu/menu__2040--1.jpg 520w, 
+                                         img/menu/menu__2550--1.jpg 620w, 
+                                         img/menu/menu__3800--1.jpg 720w"
+                                 sizes="(max-width: 429px) 338px, 
+                                        (max-width: 811px) 427px, 
+                                        (max-width: 1367px) 350px, 
+                                        (max-width: 1921px) 420px, 
+                                        (max-width: 2041px) 520px, 
+                                        (max-width: 2551px) 620px, 
+                                        720px" />
+                            <div class="bg__shadow absolute"></div>
+                            <h3 id="menu__item--label-1">
+                                FITNESS&nbsp;&nbsp;menu
+                            </h3>
+                            <p class="menu__item--text">
+                                The Fitness menu is a new approach to cooking - more fresh vegetables and fruits. For people who are into sports, being active and healthy. This is a completely new product, providing high quality food for a good price!
+                            </p>
+                            <hr>
+                            <div class="menu__item--price  flex justify-between align-center">
+                                <p>
+                                    Price:
+                                </p>
+                                <div class="menu__item--price-total">
+                                    <span>229</span>
+                                     USD/day
+                                </div>
+                            </div>
+                        </article>
+                        <article aria-labelledby="menu__item--label-2" 
+                                 class="menu__item js-active"
+                                 id="menu__item--center">
+                            <img src="img/menu/menu__1920--2.jpg" 
+                                 alt="Assorted delicious grilled seafood, meat and fruits, served with multiple sauces and a bottle of wine on the wooden table" 
+                                 srcset="img/menu/menu__428--2.jpg 338w, 
+                                         img/menu/menu__810--2.jpg 427w, 
+                                         img/menu/menu__1366--2.jpg 350w, 
+                                         img/menu/menu__1920--2.jpg 420w, 
+                                         img/menu/menu__2040--2.jpg 520w, 
+                                         img/menu/menu__2550--2.jpg 620w, 
+                                         img/menu/menu__3800--2.jpg 720w"
+                                 sizes="(max-width: 429px) 338px, 
+                                        (max-width: 811px) 427px, 
+                                        (max-width: 1367px) 350px, 
+                                        (max-width: 1921px) 420px, 
+                                        (max-width: 2041px) 520px, 
+                                        (max-width: 2551px) 620px, 
+                                        720px" />
+                            <div class="bg__shadow absolute"></div>
+                            <h3 id="menu__item--label-2">
+                                PREMIUM&nbsp;&nbsp;menu
+                            </h3>
+                            <p class="menu__item--text">
+                                In the premium menu, we use not only beautiful packaging design, but also 'haute cuisine' cooking techniques and ingredients. Red fish, seafood, fruits - a dinner at the restaurant without going out!
+                            </p>
+                            <hr>
+                            <div class="menu__item--price  flex justify-between align-center">
+                                <p>
+                                    Price:
+                                </p>
+                                <div class="menu__item--price-total">
+                                    <span>550</span>
+                                     USD/day
+                                </div>
+                            </div>
+                        </article>
+                        <article aria-labelledby="menu__item--label-3" 
+                                 class="menu__item"
+                                 id="menu__item--right">
+                            <img src="img/menu/menu__1920--3.jpg" 
+                                 alt="Indonesian vegan plate of vegetables cut in small pieces with quinoa and komosa served with sauce" 
+                                 srcset="img/menu/menu__428--3.jpg 338w, 
+                                         img/menu/menu__810--3.jpg 427w, 
+                                         img/menu/menu__1366--3.jpg 350w, 
+                                         img/menu/menu__1920--3.jpg 420w, 
+                                         img/menu/menu__2040--3.jpg 520w, 
+                                         img/menu/menu__2550--3.jpg 620w, 
+                                         img/menu/menu__3800--3.jpg 720w"
+                                 sizes="(max-width: 429px) 338px, 
+                                        (max-width: 811px) 427px, 
+                                        (max-width: 1367px) 350px, 
+                                        (max-width: 1921px) 420px, 
+                                        (max-width: 2041px) 520px, 
+                                        (max-width: 2551px) 620px, 
+                                        720px" />
+                            <div class="bg__shadow absolute"></div>
+                            <h3 id="menu__item--label-3">
+                                VEGAN&nbsp;&nbsp;menu
+                            </h3>
+                            <p class="menu__item--text">
+                                Our special Vegan menu has a thorough selection of ingredients - a plant-based diet avoiding all animal foods such as meat, dairy, eggs and honey. Complete harmony with oneself and nature in every element!
+                            </p>
+                            <hr>
+                            <div class="menu__item--price  flex justify-between align-center">
+                                <p>
+                                    Price:
+                                </p>
+                                <div class="menu__item--price-total">
+                                    <span>430</span>
+                                     USD/day
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="container flex align-center">
+                <section aria-label="Copyright & reference" 
+                         class="copyright flex">
+                    <p class="c-default">
+                        <a href="#" 
+                           target="_blank" 
+                           class="reference relative">
+                           The Velvet Gourmet
+                        </a>
+                    </p>  
+                    <p class="c-default">
+                        Copyright 
+                        <span class="c-default">
+                        &nbsp;©&nbsp;
+                        </span>
+                        2022 
+                    </p>     
+                    <p class="c-default">
+                        All Rights Reserved
+                    </p>                    
+                    <p class="c-default">
+                        Icons&nbsp;&nbsp;by&nbsp;
+                        <a href="https://icons8.com" 
+                           target="_blank"
+                           class="reference relative">
+                            Icons8
+                        </a>
+                    </p>        
+                </section>
+                <section aria-label="Contact information" 
+                         class="social flex">
+                    <a href="tel:1-800-555-0701" 
+                       class="flex align-center relative">
+                        <img src="icons/phone.svg" 
+                             alt="" />
+                        <span class="relative">
+                            1-800-555-0701
+                        </span>
+                    </a>
+                    <a href="mailto:inof@thevelvetgourmet.com" 
+                       target="_blank" 
+                       class="flex align-center relative">
+                        <img src="icons/mail.svg" 
+                             alt="" />
+                        <span class="relative">
+                             info@velvetgourmet.com
+                        </span>
+                    </a>
+                    <a href="#" 
+                       class="flex align-center relative">
+                        <img src="icons/instagram.svg" 
+                             alt="" />
+                        <span class="relative">
+                            instagram
+                        </span>
+                    </a>
+                    <a href="#" 
+                       class="flex align-center relative">
+                        <img src="icons/facebook.svg" 
+                             alt="" />
+                        <span class="relative">
+                            facebook
+                        </span>
+                    </a>
+                </section>
+            </div>
+            <section aria-label="Subscription form"
+            id="subscription">
+                <div class="container">
+                    <form action="#" 
+                            method="get" 
+                            class="flex">
+                        <fieldset class="flex">
+                            <legend>
+                                Get a free 1-day pass for a menu of your choice by subscribing to our newsletter
+                            </legend>
+                            <label class="flex align-center">
+                                Name
+                                <input type="text" 
+                                        id="input__subscription--name" 
+                                        required />
+                            </label>
+                            <label class="flex align-center">
+                                E-mail
+                                <input type="mail" 
+                                        id="input__subscription--mail" 
+                                        required />
+                            </label>
+                            <button class="btn btn__sub c-pointer flex align-center">
+                                Subscribe
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </footer> 
+    </body>
+</html>

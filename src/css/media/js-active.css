@@ -1,0 +1,30 @@
+/*---------------------------- JavaScript ---------------------------*/
+
+
+@media only screen and (max-width: 1081px) {
+    .menu__item.js-active {
+        z-index: 2;
+    }
+    #menu__item--left.js-active,
+    #menu__item--center.js-active,
+    #menu__item--right.js-active {
+        transform: translate3d(0, 0, 1em);
+        transition: transform 0.3s ease;
+    }
+}
+
+
+@media only screen and (max-width: 811px) {
+    .menu__item.js-active,
+    .menu__item.js-active .bg__shadow {
+        min-width: 50vw;
+    }
+}
+
+
+@media only screen and (max-width: 429px) {
+    .menu__item.js-active,
+    .menu__item.js-active .bg__shadow {
+        min-width: 75vw;
+    }
+}

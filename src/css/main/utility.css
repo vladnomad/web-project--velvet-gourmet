@@ -1,0 +1,73 @@
+/*------------------------- utility classes ------------------------*/
+
+
+.flex {
+    display: flex;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.c-default {
+    cursor: default;
+}
+.c-pointer {
+    cursor: pointer;
+}
+.align-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.perspective {
+    perspective: 320px;
+}
+.btn {
+    font-weight: 300;
+    text-align: center;
+    width: 220px;
+    height: 65px;
+    justify-content: center;
+    background: var(--white);
+    font-variant: inherit;
+    border: 1px solid var(--border);
+    box-shadow: 0px 1px 3px var(--shadow-light);
+    transition: box-shadow 0.2s ease-in-out;
+    border-radius: 8px;
+}
+.btn:hover {
+    box-shadow: 0 1px 10px var(--shadow-light);
+}
+.title {
+    text-align: center;
+}
+.bg__beige {
+    position: absolute;
+    background: var(--beige-light);
+    z-index: -1;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.glass {
+    color: var(--white);
+    background: var(--purple);
+    border: 1px solid var(--purple-border);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-dark);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.invisible {
+    position: absolute;
+    z-index: -1;
+    color: var(--white);
+}

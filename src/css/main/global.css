@@ -1,0 +1,116 @@
+/*-------------------------- global styles -------------------------*/
+
+
+:root {
+    /* color */
+    --white: #ffffff;
+    --white-opaque: #ffffffde;
+    --grey: #d7d7d74f;
+    --black: #000000;
+    --border: #00000033;
+    --shadow-opaque: #00000010;
+    --shadow-light: #00000040;
+    --shadow-dark: #0000008a;
+    --shadow-input: #000c;
+    --shadow-inset: #42445a80;
+    --shadow-white: #ffffff54;
+    --purple: #442d84c7;
+    --purple-border: #e5d4ff82;
+    --beige-light: #b37a4921;
+    --beige-dark: #b7a393;
+
+    /* font-size */
+    --smallest: 16px;
+    --small: 18px;
+    --medium: 20px;
+    --big: 22px;
+    --medium-4k: 25px;
+    --large: 28px;
+    --big-4k: 32px;
+    --large-4k: 36px;
+    --huge: 48px;
+    --huge-4k: 72px;
+}
+html {
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-variant: small-caps;
+}
+*,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+a,
+span {
+    text-decoration: none;
+    color: inherit;
+}
+a:focus,
+button:focus,
+input:focus,
+[tabindex="0"]:focus {
+    outline: 2px solid var(--beige-dark);
+}
+button {
+    font-family: inherit;
+}
+h1 {
+    font-weight: 200;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main {
+    display: grid;
+    overflow-x: clip;
+    grid-template-columns: 17.45vw 65vw 17.45vw;
+}
+main article,
+main hr {
+    grid-column: 2;
+}
+h2,
+h3,
+.title {
+    font-weight: inherit;
+}
+.tabpanel p,
+#concept p,
+.menu__item p,
+#marketing #offer p {
+    font-variant: normal;
+    line-height: 1.5;
+    text-align: justify;
+}
+#sidepanel div,
+footer {
+    font-variant: all-small-caps;
+}
+hr {
+    width: 25vw;
+    margin: 0 auto;
+    height: 1px;
+    border: 0;
+    background: var(--shadow-light);
+}
+legend {
+    margin: 0 auto;
+    padding: 0 12px;
+    text-align: center;
+}
+input {
+    font-family: inherit;
+    font-variant: inherit;
+    text-align: center;
+}
+input,
+.btn__sub {
+    border: 2px solid var(--purple-border);
+    color: var(--white);
+    transition: box-shadow 0.15s ease-in-out;
+}
