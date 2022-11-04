@@ -1,27 +1,28 @@
-# Catering web page
+# Catering web project
 
-Project, originally provided by a Udemy JavaScript course. 
-I had made multiple changes to the project, before continuing with JavaScript.
+A one page catering web project as a part of the practical part of a JavaScript course.
+I had made multiple changes to the project's HTML, CSS and file structure before implementing JavaScript.
 
-- color theme
-- individual styles
-- animations and states
-- html and css structure
-- responsive design
-- accessibility concerns
-- art direction shift on mobile devices
+## Significant changes:
 
-### Before
+- Complete overhaul of graphic style
+- Animations and states
+- HTML and CSS structure
+- Responsive design
+- Addressing accessibility
+- Art direction shift on mobile devices
+
+### Before...
 
 ![original project style](https://drive.google.com/uc?id=12v0zTEXCeI-BVCOQp7G4QuYmwp_sZYwK)
 
-### After
+### After...
 
 ![changed project style](https://drive.google.com/uc?id=1NCsHU3nF4PtX2a8gmB5PMaHP2FC-F3CC)
 
 ## HTML
 
-### Improving accessibility  
+### Improving accessibility
 
 - Used semantic html tags like: main, article, section, aside
 - Added descriptive alt attributes to all images
@@ -34,24 +35,24 @@ I had made multiple changes to the project, before continuing with JavaScript.
 ![accessibility tree](https://drive.google.com/uc?id=1v3a5M5-JXdztVoC-H1-esCSQm4VF1rLA)
 
 ### Optimization
-  
-- Images use srcset and sizes attributes to provide the appropriate image with regards to the page's width
-- Intentionally used jpg because of the smaller file size than the compressed Webp I was getting
-- Used [postcss-import](https://github.com/postcss/postcss-import) to split blocks of styles into separate files
+
+- Used [postcss-import](https://github.com/postcss/postcss-import) to split blocks of styles into separate files  
+- JPG was used for photos, showing a better size-quality ratio than WEBP
+- Added srcset and sizes attributes to img, specifying the URL to use on different devices
 
 ## CSS
 
 ### Design
 
+- Custom radio input style fitting the page's theme
 - Utilized grid and flex layouts with adaptive changes on mobile devices
 - Interactable elements have unique hover, active, focus states and animations
 - Used glass design for the calculation form, modal window form and tab panel description
-- Custom radio input style fitting the page's theme
 
 ### Optimization
 
-- Organized styles into blocks by usage or page section for better readability
-- Used utility classes for reusable styles in HTML (mostly positioning) 
+- Organized styles into blocks for better readability and maintenance
+- Used utility classes for reusable styles in HTML (mostly positioning)
 - Added custom variables for colors and font-sizes to avoid reusing values and stick to the design pattern
 - Added media queries for multiple devices with changes to art direction, positioning and fonts
--  Multi-browser compatibilty by providing vendor prefixes to backdrop-filter, clip-path and appearance
+- Multi-browser compatibilty: providing vendor prefixes to backdrop-filter, clip-path and appearance
