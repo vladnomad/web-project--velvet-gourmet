@@ -124,8 +124,14 @@ nav a:hover::before {
 #tabmenu section {
   width: 100%;
 }
+#tabmenu section.invisible {
+  left: 0;
+  width: 79.2%;
+  height: 65vh;
+}
 #tabmenu section[role="tablist"] {
-  padding-left: 26px;
+  padding: 10px 0 0 1px;
+  justify-content: center;
   border-left: 1px solid var(--black);
   flex-direction: column;
 }
@@ -136,16 +142,17 @@ nav a:hover::before {
   background: transparent;
   border: none;
   font-variant: inherit;
+  border-radius: 0 4px 4px 0;
+  padding: 5px 20px;
 }
 .tab:hover {
   color: var(--black);
   opacity: 0.85;
 }
-.tab[aria-selected="true"] {
+.tab.js-active {
   color: var(--black);
-}
-.tab span {
-  margin: 0 0 0 8px;
+  font-weight: 500;
+  font-size: var(--medium);
 }
 .tabpanel img {
   width: 100%;
@@ -233,6 +240,7 @@ nav a:hover::before {
   flex-direction: column;
   border: 2px solid var(--purple);
   transition: transform 0.3s ease;
+  box-shadow: 1px 1px 7px var(--border);
 }
 #timer__wrapper div:hover {
   transform: scale(1.2);
@@ -302,13 +310,6 @@ nav a:hover::before {
     transform: translate(0, -1px) rotate(-4deg);
   }
 }
-.btn__call:hover + #concept__call--label {
-  transition: transform 0.5s ease;
-  transform: translate(250px, 0);
-}
-.btn__call:active + #concept__call--label {
-  background: var(--shadow-dark);
-}
 #concept__call--label {
   height: 66px;
   width: 240px;
@@ -321,6 +322,13 @@ nav a:hover::before {
   border: 2px solid var(--white);
   border-radius: 0 9999px 9999px 0;
   text-align: end;
+}
+.btn__call:hover + #concept__call--label {
+  transition: transform 0.5s ease;
+  transform: translate(250px, 0);
+}
+.btn__call:active + #concept__call--label {
+  background: var(--shadow-dark);
 }
 #concept__gallery,
 #concept__gallery--slider,
@@ -784,3 +792,4 @@ footer input {
     inset 4px 6px 27px -22px var(--shadow-inset);
   background: var(--shadow-dark);
 }
+

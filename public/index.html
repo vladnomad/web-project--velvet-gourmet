@@ -67,13 +67,12 @@
                                      aria-labelledby="tablist__label" 
                                      class="tablist flex justify-center">
                                 <button role="tab" 
-                                        aria-selected="true" 
+                                        aria-selected="false" 
                                         aria-controls="tabpanel--1" 
                                         tabindex="0" 
                                         id="tab--1" 
-                                        class="tab flex relative c-pointer">
-                                        Premium
-                                        <span> menu</span>
+                                        class="tab flex relative c-pointer js-active">
+                                        Premium menu
                                 </button>
                                 <button role="tab" 
                                         aria-selected="false" 
@@ -81,8 +80,7 @@
                                         tabindex="0"
                                         id="tab--2" 
                                         class="tab flex relative c-pointer">
-                                        Fitness
-                                        <span> menu</span>
+                                        Fitness menu
                                 </button>
                                 <button role="tab" 
                                         aria-selected="false" 
@@ -90,8 +88,7 @@
                                         tabindex="0" 
                                         id="tab--3" 
                                         class="tab flex relative c-pointer">
-                                        Vegan
-                                        <span> menu</span>
+                                        Vegan menu
                                 </button>
                                 <button role="tab" 
                                         aria-selected="false" 
@@ -99,8 +96,7 @@
                                         tabindex="0" 
                                         id="tab--4" 
                                         class="tab flex relative c-pointer">
-                                        Balanced
-                                        <span> menu</span>
+                                        Balanced menu
                                 </button>
                             </section>
                         </div>
@@ -131,8 +127,7 @@
                         <section role="tabpanel"
                                  aria-labelledby="tab--2" 
                                  id="tabpanel--2" 
-                                 class="tabpanel relative" 
-                                 hidden >
+                                 class="tabpanel relative">
                             <img src="img/tab/tab__1920--2.jpg" 
                                  alt="Assorted delicious cheese and nuts, bruschette with yogurt, pesto and bresaola, and a plate of spaghetti on the marble table" 
                                  srcset="img/tab/tab__428--2.jpg 351w, 
@@ -150,14 +145,13 @@
                                         (max-width: 2551px) 1318px, 
                                         1976px" />
                             <p class="glass absolute">
-                                The Fitness menu is a new approach to cooking - more fresh vegetables and fruits. For people who are into sports, being active and healthy. This is a completely new product, providing high quality food for a good price!
+                                The Fitness menu is for people who are into sports and being active. More steam-cooking! We ensure those essential vitamins and minerals in vegetables, meat and fruits are retained during the process.
                             </p>
                         </section>
                         <section role="tabpanel"
                                  aria-labelledby="tab--3" 
                                  id="tabpanel--3" 
-                                 class="tabpanel relative" 
-                                 hidden >
+                                 class="tabpanel relative">
                             <img src="img/tab/tab__1920--3.jpg" 
                                  alt="Indonesian vegan plate of vegetables cut in small pieces with quinoa and komosa served with sauce" 
                                  srcset="img/tab/tab__428--3.jpg 351w, 
@@ -181,8 +175,7 @@
                         <section role="tabpanel"
                                  aria-labelledby="tab--4" 
                                  id="tabpanel--4" 
-                                 class="tabpanel relative" 
-                                 hidden >
+                                 class="tabpanel relative">
                             <img src="img/tab/tab__1920--4.jpg" 
                                  alt="Two dishes at the restaurant table. Grilled steak with sweet potato fries and sauces. Assorted vegetables, buckwheat and crouton, served with balsamic vinegar" 
                                  srcset="img/tab/tab__428--4.jpg 351w, 
@@ -200,7 +193,7 @@
                                         (max-width: 2551px) 1318px, 
                                         1976px" />
                             <p class="glass absolute">
-                                The "Balanced" menu is a great way to manage your diet. We balance the menu using your personal need for calories, protein, fat and carbohydrates and create healthy and rich menu for you to enjoy.
+                                The "Balanced" menu is a great way to manage your diet. We balance the menu using your personal need for calories, protein, fat and carbohydrates and create a healthy and rich menu for you to enjoy.
                             </p>
                         </section> 
                     </div>
@@ -810,5 +803,6 @@
                 </div>
             </section>
         </footer> 
+        <script src="js/main.js"></script>
     </body>
 </html>

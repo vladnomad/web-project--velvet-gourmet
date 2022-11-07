@@ -392,16 +392,9 @@
         margin: 5% 0;
         color: var(--beige-dark);
     }
-    .tab[aria-selected="true"] {
+    .tab.js-active {
         visibility: visible;
         color: var(--white);
-    }
-    .tab span {
-        margin: 1px 0 0 8px;
-        color: var(--beige-dark);
-    }
-    .tab[aria-selected="true"] > span {
-        color: var(--white-opaque);
     }
     .tabpanel p {
         padding: 6% 12% 8% 12%;
@@ -616,9 +609,6 @@
 @media only screen and (max-width: 429px) {
     #tabmenu {
         padding: 7vh 0;
-    }
-    .tab[aria-selected="true"] > span {
-        padding-top: 1px;
     }
     .slogan {
         margin: 20% 6%;
