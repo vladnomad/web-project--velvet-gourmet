@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
 
-// Tabs
+// --------------------------- Tabs --------------------------- //
 
     const tab = document.querySelectorAll(".tab"),
           tabPanel = document.querySelectorAll(".tabpanel"),
@@ -38,16 +38,25 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-// Timer
+// -------------------------- Timer -------------------------- //
 
-    const deadline = "2022-12-01";
+    const deadline = "December 1 2022 00:00:00 GMT+0100";
 
     function getTimeRemaining(time) {
-        const t = Date.parse(time) - new Date(),
-              days = Math.floor(t / (1000 * 60 * 60 * 24)),
-              hours = Math.floor((t / (1000 * 60 * 60)) % 24),
-              minutes = Math.floor((t / 1000 / 60) % 60),
-              seconds = Math.floor((t / 1000) % 60);
+        let days, hours, minutes, seconds;
+        const t = Date.parse(time) - Date.parse(new Date());
+        
+        if (t <= 0) {
+            days = 0;
+            hours = 0;
+            minutes = 0;
+            seconds = 0;
+        } else {
+            days = Math.floor( (t/(1000*60*60*24)) ),
+            hours = Math.floor( (t/(1000*60*60) % 24) ),
+            minutes = Math.floor( (t/1000/60) % 60 ),
+            seconds = Math.floor( (t/1000) % 60 );
+        }
         
         return {
             "total": t,
@@ -74,13 +83,13 @@ window.addEventListener("DOMContentLoaded", () => {
               seconds = timer.querySelector("#seconds"),
               timeInterval = setInterval(updateTimer, 1000);
 
-        updateClock();
+        updateTimer();
 
         function updateTimer() {
             const t = getTimeRemaining(time);
 
             days.innerHTML = getZero(t.days);
-            hours.innerHTML = getZero(t.hours - 1);
+            hours.innerHTML = getZero(t.hours);
             minutes.innerHTML = getZero(t.minutes);
             seconds.innerHTML = getZero(t.seconds);
 
