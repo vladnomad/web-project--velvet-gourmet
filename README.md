@@ -59,11 +59,11 @@ I had made multiple changes to the project's HTML, CSS and file structure before
 
 ## JavaScript
 
-- Added tabpanel functionality: 
+- Added tabpanel functionality\
 Switching content with animation depending on what tab was selected
 
-- Implemented a countdown timer for marketing offers
+- Implemented a countdown timer for marketing offers\
 Takes into calculation User's date and time
 
-- Respective buttons open a contact form modal window.
-Close by clicking an icon, outside of the modal wrapper or pressing Esc.
+- Respective buttons open a contact form modal window\
+Close by clicking an icon, outside of the modal wrapper or pressing Esc
