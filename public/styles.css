@@ -1036,7 +1036,6 @@ nav a:hover::before {
 
 
 #modal {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1049,9 +1048,8 @@ nav a:hover::before {
 
 
 #modal__container {
-  width: 23.5vw;
+  width: 29vw;
   min-width: 29em;
-  height: 33vh;
   margin: 33vh auto;
 }
 

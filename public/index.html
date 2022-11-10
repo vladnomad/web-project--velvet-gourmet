@@ -44,7 +44,7 @@
                 </a>
             </nav>
             <div class="perspective flex align-center justify-center">
-                <button class="btn btn__white c-pointer flex align-center">
+                <button data-modal class="btn btn__white c-pointer flex align-center">
                     Contact Us
                 </button>
             </div>
@@ -313,7 +313,7 @@
                         </p>
                     </article>
                     <section aria-label="Call request with a modal form">
-                        <button class="btn btn__call absolute c-pointer flex align-center">
+                        <button data-modal class="btn btn__call absolute c-pointer flex align-center">
                             <img src="icons/call.png" 
                                     alt="Green circle with a phone icon" />
                         </button>
@@ -322,13 +322,14 @@
                               Request a Call
                         </span>
                         <aside aria-label="Modal window with contact form" 
-                               id="modal">
+                               id="modal"
+                               class="hide">
                             <div id="modal__container">
                                 <div id="modal__wrapper" 
                                      class="glass relative">
                                     <form action="#"
                                         method="get">
-                                        <p id="modal__close" 
+                                        <p data-close id="modal__close" 
                                            class="absolute c-pointer">
                                             &#x2715;
                                         </p>
