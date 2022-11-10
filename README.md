@@ -56,3 +56,14 @@ I had made multiple changes to the project's HTML, CSS and file structure before
 - Added custom variables for colors and font-sizes to avoid reusing values and stick to the design pattern
 - Added media queries for multiple devices with changes to art direction, positioning and fonts
 - Multi-browser compatibilty: providing vendor prefixes to backdrop-filter, clip-path and appearance
+
+## JavaScript
+
+- Added tabpanel functionality: 
+Switching content with animation depending on what tab was selected
+
+- Implemented a countdown timer for marketing offers
+Takes into calculation User's date and time
+
+- Respective buttons open a contact form modal window.
+Close by clicking an icon, outside of the modal wrapper or pressing Esc.
