@@ -3,7 +3,7 @@
 A one page catering web project as a part of the practical part of a JavaScript course.
 I had made multiple changes to the project's HTML, CSS and file structure before implementing JavaScript.
 
-## Significant changes:
+### Significant changes:
 
 - Complete overhaul of graphic style
 - Animations and states
@@ -12,11 +12,11 @@ I had made multiple changes to the project's HTML, CSS and file structure before
 - Addressing accessibility
 - Art direction shift on mobile devices
 
-### Before...
+## Before...
 
 ![original project style](https://drive.google.com/uc?id=12v0zTEXCeI-BVCOQp7G4QuYmwp_sZYwK)
 
-### After...
+## After...
 
 ![changed project style](https://drive.google.com/uc?id=1NCsHU3nF4PtX2a8gmB5PMaHP2FC-F3CC)
 
@@ -36,7 +36,6 @@ I had made multiple changes to the project's HTML, CSS and file structure before
 
 ### Optimization
 
-- Used [postcss-import](https://github.com/postcss/postcss-import) to split blocks of styles into separate files  
 - JPG was used for photos, showing a better size-quality ratio than WEBP
 - Added srcset and sizes attributes to img, specifying the URL to use on different devices
 
@@ -52,6 +51,7 @@ I had made multiple changes to the project's HTML, CSS and file structure before
 ### Optimization
 
 - Organized styles into blocks for better readability and maintenance
+- Used [postcss-import](https://github.com/postcss/postcss-import) to split blocks of styles into separate files  
 - Used utility classes for reusable styles in HTML (mostly positioning)
 - Added custom variables for colors and font-sizes to avoid reusing values and stick to the design pattern
 - Added media queries for multiple devices with changes to art direction, positioning and fonts
