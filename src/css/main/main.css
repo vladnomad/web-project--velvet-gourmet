@@ -674,14 +674,14 @@ button#concept__gallery--btn-right {
 .menu__item--price-total {
   font-variant: normal;
 }
-#menu__item--1:hover {
+.menu__item.num--1:hover {
   transform: skew(-0.3deg) rotateY(1deg) rotateX(-0.2deg)
     translate3d(1em, 0, 0.5em);
 }
-#menu__item--2:hover {
+.menu__item.num--2:hover {
   transform: translate3d(0, 0px, 0.5em);
 }
-#menu__item--3:hover {
+.menu__item.num--3:hover {
   transform: skew(0.1deg) rotateY(-1deg) rotateX(-0.2deg)
     translate3d(-1em, 0, 0.5em);
 }

@@ -1528,18 +1528,18 @@ button#concept__gallery--btn-right {
 }
 
 
-#menu__item--left:hover {
+.menu__item.num--1:hover {
   transform: skew(-0.3deg) rotateY(1deg) rotateX(-0.2deg)
     translate3d(1em, 0, 0.5em);
 }
 
 
-#menu__item--center:hover {
+.menu__item.num--2:hover {
   transform: translate3d(0, 0px, 0.5em);
 }
 
 
-#menu__item--right:hover {
+.menu__item.num--3:hover {
   transform: skew(0.1deg) rotateY(-1deg) rotateX(-0.2deg)
     translate3d(-1em, 0, 0.5em);
 }
