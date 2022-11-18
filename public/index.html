@@ -340,16 +340,16 @@
                                             <label>
                                                 Name
                                                 <input type="text" 
-                                                        id="input__modal--name" 
-                                                        class="modal__input btn flex align-center" 
-                                                        required />
+                                                       name="input__modal--name" 
+                                                       class="modal__input btn flex align-center" 
+                                                       required />
                                             </label>
                                             <label>
                                                 Phone number
                                                 <input type="tel" 
-                                                        id="input__modal--phone" 
-                                                        class="modal__input btn flex align-center" 
-                                                        required />
+                                                       name="input__modal--phone" 
+                                                       class="modal__input btn flex align-center" 
+                                                       required />
                                             </label>
                                             <button class="btn btn__dark flex c-pointer align-center">
                                                 Submit
@@ -505,14 +505,14 @@
                                 <label class="flex align-center">
                                     Female
                                     <input type="radio" 
-                                           name="input__group--sex"
+                                           name="input__calc--sex-female"
                                            class="relative c-pointer flex align-center js-active"
                                            checked />
                                 </label>
                                 <label class="flex align-center">
                                     Male
                                     <input type="radio" 
-                                           name="input__group--sex"
+                                           name="input__calc--sex-male"
                                            class="relative c-pointer flex align-center" />
                                 </label>
                             </fieldset>
@@ -524,18 +524,21 @@
                                 <label class="flex align-center">
                                     Height (cm)
                                     <input type="text"
+                                           name="input__calc--const-height"
                                            inputmode="numeric" 
                                            class="c-pointer flex align-center" />
                                 </label>
                                 <label class="flex align-center">
                                     Weight (kg)
                                     <input type="text"
+                                           name="input__calc--const-weight"
                                            inputmode="numeric" 
                                            class="c-pointer flex align-center" />
                                 </label>
                                 <label class="flex align-center">
                                     Age
                                     <input type="text"
+                                           name="input__calc--const-age"
                                            inputmode="numeric" 
                                            class="c-pointer flex align-center" />
                                 </label>
@@ -548,20 +551,20 @@
                                 <label class="flex align-center">
                                     Low
                                     <input type="radio" 
-                                           name="input__group--activity"
+                                           name="input__calc--act-low"
                                            class="relative c-pointer flex align-center" />
                                 </label>
                                 <label class="flex align-center">
                                     Moderate
                                     <input type="radio" 
-                                           name="input__group--activity"
+                                           name="input__calc--act-med"
                                            class="relative c-pointer flex align-center js-active"
                                            checked />
                                 </label>
                                 <label class="flex align-center">
                                     High
                                     <input type="radio" 
-                                           name="input__group--activity"
+                                           name="input__calc--act-high"
                                            class="relative c-pointer flex align-center" />
                                 </label>
                             </fieldset>
@@ -677,14 +680,14 @@
                             <label class="flex align-center">
                                 Name
                                 <input type="text" 
-                                        id="input__subscription--name" 
-                                        required />
+                                       name="input__sub--name"
+                                       required />
                             </label>
                             <label class="flex align-center">
                                 E-mail
                                 <input type="mail" 
-                                        id="input__subscription--mail" 
-                                        required />
+                                       name="input__sub--mail" 
+                                       required />
                             </label>
                             <button class="btn btn__sub c-pointer flex align-center">
                                 Subscribe
