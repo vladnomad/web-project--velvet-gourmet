@@ -70,3 +70,15 @@ Takes into calculation User's date and time.
 #### Respective buttons open a contact form modal window
 
 Close by clicking an icon, outside of the modal wrapper or pressing Esc.
+
+#### Implementing JS classes to render menu cards
+
+The cards are dynamically rendered with the help of JS classess. Rest operator was used to add HTML classess to rendered cards for greater reusability.
+
+#### Server-side form functionality
+
+Implementing ability to send data from forms to the server in JSON format. Used XAMMP on Linux to test the POST method.
+
+#### Dynamically constructed status notification
+
+Notification for the user on loading, success and failure in sending form data to the server.
