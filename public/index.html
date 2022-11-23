@@ -324,13 +324,13 @@
                         <aside aria-label="Modal window with contact form" 
                                id="modal"
                                class="hide">
-                            <div id="modal__container">
-                                <div id="modal__wrapper" 
-                                     class="glass relative">
-                                    <form action="#"
-                                        method="get">
-                                        <p data-close id="modal__close" 
-                                           class="absolute c-pointer">
+                            <div class="modal__container">
+                                <div class="modal__wrapper glass relative">
+                                    <form method="post" 
+                                          action="/form" 
+                                          autocomplete="off"
+                                          id="modal__form">
+                                        <p data-close class="modal__close absolute c-pointer">
                                             &#x2715;
                                         </p>
                                         <fieldset class="flex">
@@ -492,8 +492,9 @@
                          class="bg__logo absolute">
                     <div id="calc__wrapper" 
                          class="glass">
-                        <form action="#" 
-                              method="get"
+                        <form method="post" 
+                              action="/form" 
+                              autocomplete="off"
                               class="flex" 
                               aria-label="User data for calculation" 
                               aria-description="Select one of the options in case of radio buttons and provide your physical parameters to calculate daily calorie need">
@@ -670,9 +671,10 @@
             <section aria-label="Subscription form"
             id="subscription">
                 <div class="container">
-                    <form action="#" 
-                            method="get" 
-                            class="flex">
+                    <form method="post" 
+                          action="/form" 
+                          autocomplete="off"
+                          class="flex">
                         <fieldset class="flex">
                             <legend>
                                 Get a free 1-day pass for a menu of your choice by subscribing to our newsletter

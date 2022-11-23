@@ -147,7 +147,7 @@
     .btn__call:hover + #concept__call--label {
         transform: translate(320px, 0);
     }
-    #modal__container {
+    .modal__container {
         width: 15.5vw;
     }
     #calc {
@@ -637,7 +637,7 @@
     #concept__gallery--container {
         margin: 8vh 0;
     }
-    #modal__container {
+    .modal__container {
         min-width: 90%;
     }
     #calc {
@@ -715,7 +715,7 @@
     #concept__main--container {
         padding: 10vh 0 0 0;
     }
-    #modal__container {
+    .modal__container {
         margin: 16.5vh auto;
         height: 67vh;
     }

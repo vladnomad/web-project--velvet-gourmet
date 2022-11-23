@@ -5,7 +5,7 @@
     display: flex;
 }
 .show {
-    display: block;
+    display: inherit;
 }
 .hide {
     display: none;
@@ -51,6 +51,11 @@
     box-shadow: 0 1px 10px var(--shadow-light);
 }
 .title {
+    text-align: center;
+}
+.modal__title {
+    margin: 0 auto;
+    padding: 0 12px;
     text-align: center;
 }
 .bg__beige {

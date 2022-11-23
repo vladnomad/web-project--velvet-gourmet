@@ -1,6 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
 
+
 // --------------------------- Tabs --------------------------- //
+
 
     const tab = document.querySelectorAll(".tab"),
           tabPanel = document.querySelectorAll(".tabpanel"),
@@ -38,7 +40,9 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
 // -------------------------- Timer -------------------------- //
+
 
     const deadline = "December 1 2022 00:00:00 GMT+0100";
 
@@ -101,19 +105,22 @@ window.addEventListener("DOMContentLoaded", () => {
 
     setTimer("timer__wrapper", deadline);
 
+
 // -------------------------- Modal -------------------------- //
 
+
     const modalOpen = document.querySelectorAll("[data-modal]"),
-          modal = document.getElementById("modal"),
-          modalClose = document.querySelector("[data-close]");
+          modal = document.getElementById("modal");
 
     function openModal() {
-        modal.classList.toggle("hide");
+        modal.classList.remove("hide");
+        modal.classList.add("show");
         document.body.style.overflow = "hidden";
     }
 
     function closeModal() {
-        modal.classList.toggle("hide");
+        modal.classList.remove("show");
+        modal.classList.add("hide");
         document.body.style.overflow = "";
     }
 
@@ -121,10 +128,9 @@ window.addEventListener("DOMContentLoaded", () => {
         btn.addEventListener("click", openModal);
     });
 
-    modalClose.addEventListener("click", closeModal);
 
     modal.addEventListener("click", (e) => {
-        if (e.target === modal) {
+        if (e.target === modal || e.target.getAttribute("data-close") == "") {
             closeModal();
         }
     });
@@ -135,7 +141,9 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
 // -------------------------- Cards -------------------------- //
+
 
     class MenuCard {
         constructor(num, alt, title, descr, price, parentSelector, ...classes) {
@@ -237,10 +245,13 @@ window.addEventListener("DOMContentLoaded", () => {
         "num--3"
     ).render();
 
+    
 // -------------------------- Server -------------------------- //
+
 
     // Forms
 
+    
     const forms = document.querySelectorAll("form");
 
     const message = {
@@ -280,15 +291,43 @@ window.addEventListener("DOMContentLoaded", () => {
             request.addEventListener("load", () => {
                 if (request.status === 200) {
                     console.log(request.response);
-                    statusMessage.textContent = message.success;
+                    showStatusModal(message.success);
                     form.reset();
-                    setTimeout(() => {
-                        statusMessage.remove();
-                    }, 1500);
+                    statusMessage.remove();
                 } else {
-                    statusMessage.textContent = message.error;
+                    showStatusModal(message.error);
                 }
             });
         });
+    }
+
+
+    // Status Message
+
+
+    function showStatusModal(message) {
+        const prevModal = document.querySelector(".modal__container");
+
+        prevModal.classList.add("hide");
+        openModal();
+
+        const statusModal = document.createElement("div");
+        statusModal.classList.add("modal__container");
+        statusModal.innerHTML = `
+            <div class="modal__wrapper glass relative">
+                <div class="modal__close align-y absolute c-pointer" data-close>&#x2715;</div>
+                <div class="modal__title">${message}</div>
+            </div>
+        `;
+
+        document.getElementById("modal__form").classList.toggle("hide");
+        document.querySelector("#modal").append(statusModal);
+        setTimeout(() => {
+            statusModal.remove();
+            prevModal.classList.remove("hide");
+            prevModal.classList.add("show");
+            closeModal();
+            document.getElementById("modal__form").classList.toggle("hide");
+        }, 3000);
     }
 });

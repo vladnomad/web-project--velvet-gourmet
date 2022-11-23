@@ -164,8 +164,6 @@ input,
 #sidepanel div,
 #marketing section p,
 #concept p,
-#modal legend,
-#modal input,
 .btn.btn__dark,
 #calc label,
 .menu__item p.menu__item--text,
@@ -177,6 +175,8 @@ footer label {
 
 
 .tabpanel p,
+#modal legend,
+#modal input,
 #calc label,
 .menu__item h3,
 .menu__item--price-total,
@@ -184,7 +184,8 @@ footer label {
 .copyright p,
 .copyright a,
 .social a,
-footer legend {
+footer legend,
+footer input {
   font-size: 20px;
   font-size: var(--medium);
 }
@@ -195,11 +196,11 @@ nav a,
 #tablist__label,
 .tab[aria-selected="true"],
 #offer span,
-#modal__close,
+.modal__close,
+.modal__title,
 #calc input,
 #calc__total,
-.menu__item--price p,
-footer input {
+.menu__item--price p {
   font-size: 22px;
   font-size: var(--big);
 }
@@ -353,10 +354,8 @@ h1,
     font-size: 28px;
     font-size: var(--large);
   }
-  #modal__close {
-    /* font-size: var(--medium); */
-  }
   #modal legend,
+  .modal__title,
   #modal label {
     font-size: 16px;
     font-size: var(--smallest);
@@ -394,7 +393,7 @@ h1,
 
 
 .show {
-    display: block;
+    display: inherit;
 }
 
 
@@ -469,6 +468,13 @@ h1,
 
 
 .title {
+    text-align: center;
+}
+
+
+.modal__title {
+    margin: 0 auto;
+    padding: 0 12px;
     text-align: center;
 }
 
@@ -885,6 +891,8 @@ nav a:hover::before {
   transition: transform 0.3s ease;
   box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
   box-shadow: 1px 1px 7px var(--border);
+  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 
@@ -1047,14 +1055,14 @@ nav a:hover::before {
 }
 
 
-#modal__container {
+.modal__container {
   width: 29vw;
   min-width: 29em;
   margin: 33vh auto;
 }
 
 
-#modal__wrapper {
+.modal__wrapper {
   width: 100%;
   padding: 40px;
 }
@@ -1075,7 +1083,7 @@ nav a:hover::before {
 }
 
 
-#modal__close {
+.modal__close {
   top: -1%;
   right: 4%;
   margin: 0;
@@ -1084,12 +1092,17 @@ nav a:hover::before {
 }
 
 
+.modal__close.align-y {
+  top: 12%;
+}
+
+
 #modal input {
   width: calc(100% - 40px);
   background: rgba(0,0,0,0.54118);
   background: var(--shadow-dark);
-  color: #b7a393;
-  color: var(--beige-dark);
+  color: #ffffff;
+  color: var(--white);
   border-radius: 8px;
   margin: 1em;
   height: 50px;
@@ -1133,6 +1146,22 @@ nav a:hover::before {
   box-shadow: 0px 1px 3px var(--shadow-light),
     inset 4px 6px 27px -22px var(--shadow-inset);
   transition: background 0.1s ease, box-shadow 0.1s ease;
+}
+
+
+form .status {
+  position: absolute;
+  right: -12%;
+  top: 9%;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 25px rgba(0,0,0,0.25098);
+  box-shadow: 0px 4px 25px var(--shadow-light);
+  border-radius: 9999px;
+  z-index: 1;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background: rgba(0,0,0,0.25098);
+  background: var(--shadow-light);
 }
 
 
@@ -1854,7 +1883,7 @@ footer input {
     .btn__call:hover + #concept__call--label {
         transform: translate(320px, 0);
     }
-    #modal__container {
+    .modal__container {
         width: 15.5vw;
     }
     #calc {
@@ -2353,7 +2382,7 @@ footer input {
     #concept__gallery--container {
         margin: 8vh 0;
     }
-    #modal__container {
+    .modal__container {
         min-width: 90%;
     }
     #calc {
@@ -2431,7 +2460,7 @@ footer input {
     #concept__main--container {
         padding: 10vh 0 0 0;
     }
-    #modal__container {
+    .modal__container {
         margin: 16.5vh auto;
         height: 67vh;
     }

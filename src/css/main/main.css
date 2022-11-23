@@ -241,6 +241,7 @@ nav a:hover::before {
   border: 2px solid var(--purple);
   transition: transform 0.3s ease;
   box-shadow: 1px 1px 7px var(--border);
+  background-color: var(--white);
 }
 #timer__wrapper div:hover {
   transform: scale(1.2);
@@ -347,12 +348,12 @@ nav a:hover::before {
   z-index: 1;
   background: var(--shadow-dark);
 }
-#modal__container {
+.modal__container {
   width: 29vw;
   min-width: 29em;
   margin: 33vh auto;
 }
-#modal__wrapper {
+.modal__wrapper {
   width: 100%;
   padding: 40px;
 }
@@ -366,16 +367,19 @@ nav a:hover::before {
 #modal label {
   text-align: center;
 }
-#modal__close {
+.modal__close {
   top: -1%;
   right: 4%;
   margin: 0;
   color: var(--purple-border);
 }
+.modal__close.align-y {
+  top: 12%;
+}
 #modal input {
   width: calc(100% - 40px);
   background: var(--shadow-dark);
-  color: var(--beige-dark);
+  color: var(--white);
   border-radius: 8px;
   margin: 1em;
   height: 50px;
@@ -403,6 +407,18 @@ nav a:hover::before {
   box-shadow: 0px 1px 3px var(--shadow-light),
     inset 4px 6px 27px -22px var(--shadow-inset);
   transition: background 0.1s ease, box-shadow 0.1s ease;
+}
+form .status {
+  position: absolute;
+  right: -12%;
+  top: 9%;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 25px var(--shadow-light);
+  border-radius: 9999px;
+  z-index: 1;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background: var(--shadow-light);
 }
 
 /* ------------------------- concept__gallery ---------------------- */

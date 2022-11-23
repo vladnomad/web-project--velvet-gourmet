@@ -4,8 +4,6 @@
 #sidepanel div,
 #marketing section p,
 #concept p,
-#modal legend,
-#modal input,
 .btn.btn__dark,
 #calc label,
 .menu__item p.menu__item--text,
@@ -14,6 +12,8 @@ footer label {
   font-size: var(--small);
 }
 .tabpanel p,
+#modal legend,
+#modal input,
 #calc label,
 .menu__item h3,
 .menu__item--price-total,
@@ -21,7 +21,8 @@ footer label {
 .copyright p,
 .copyright a,
 .social a,
-footer legend {
+footer legend,
+footer input {
   font-size: var(--medium);
 }
 .btn,
@@ -29,11 +30,11 @@ nav a,
 #tablist__label,
 .tab[aria-selected="true"],
 #offer span,
-#modal__close,
+.modal__close,
+.modal__title,
 #calc input,
 #calc__total,
-.menu__item--price p,
-footer input {
+.menu__item--price p {
   font-size: var(--big);
 }
 #concept__gallery--counter {
@@ -159,10 +160,8 @@ h1,
   h1 {
     font-size: var(--large);
   }
-  #modal__close {
-    /* font-size: var(--medium); */
-  }
   #modal legend,
+  .modal__title,
   #modal label {
     font-size: var(--smallest);
   }
