@@ -1,0 +1,28 @@
+{
+  "menu": [
+    {
+      "num": "1",
+      "alt": "Assorted delicious cheese and nuts, bruschette with yogurt, pesto and bresaola, and a plate of spaghetti on the marble table",
+      "title": "FITNESS",
+      "descr": "The Fitness menu is a new approach to cooking - more fresh vegetables and fruits. For people who are into sports, being active and healthy. This is a completely new product, providing high quality food for a good price!",
+      "price": 80
+    },
+    {
+      "num": "2",
+      "alt": "Assorted delicious grilled seafood, meat and fruits, served with multiple sauces and a bottle of wine on the wooden table",
+      "title": "PREMIUM",
+      "descr": "In the premium menu, we use not only beautiful packaging design, but also 'haute cuisine' cooking techniques and ingredients. Red fish, seafood, fruits - a dinner at the restaurant without going out!",
+      "price": 105
+    },
+    {
+      "num": "3",
+      "alt": "Indonesian vegan plate of vegetables cut in small pieces with quinoa and komosa served with sauce",
+      "title": "VEGAN",
+      "descr": "Our special Vegan menu has a thorough selection of ingredients - a plant-based diet avoiding all animal foods such as meat, dairy, eggs and honey. Complete harmony with oneself and nature in every element!",
+      "price": 90
+    }
+  ],
+  "requests": [
+
+  ]
+}

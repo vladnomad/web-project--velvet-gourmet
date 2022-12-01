@@ -6,10 +6,11 @@
     "postcss:watch": "postcss src/css/styles.css --dir public"
   },
   "keywords": [],
-  "author": "",
+  "author": "vladnomad",
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^5.1.14",
+    "json-server": "^0.17.1",
     "postcss": "^8.4.18",
     "postcss-cli": "^10.0.0",
     "postcss-import": "^15.0.0",
@@ -19,6 +20,7 @@
     "ansi-regex": "^5.0.1",
     "ansi-styles": "^4.3.0",
     "anymatch": "^3.1.2",
+    "axios": "^1.2.0",
     "binary-extensions": "^2.2.0",
     "braces": "^3.0.2",
     "chokidar": "^3.5.3",
@@ -83,5 +85,13 @@
     "yargs": "^17.6.0",
     "yargs-parser": "^21.1.1"
   },
-  "description": ""
+  "description": "A one page catering web project as a part of the practical part of a JavaScript course. I had made multiple changes to the project's HTML, CSS and file structure before implementing JavaScript.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladnomad/web-project--velvet-gourmet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vladnomad/web-project--velvet-gourmet/issues"
+  },
+  "homepage": "https://github.com/vladnomad/web-project--velvet-gourmet#readme"
 }
