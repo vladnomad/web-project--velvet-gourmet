@@ -913,9 +913,12 @@ nav a:hover::before {
 #concept {
   display: grid;
   justify-content: space-around;
-  height: 100%;
   grid-template-columns: auto 1fr;
-  padding: 6vw 0;
+  height: calc(100% - 12vw);
+  margin: 6vw 0;
+  box-shadow: 1px 0px 7px rgba(66,68,90,0.50196);
+  box-shadow: 1px 0px 7px var(--shadow-inset);
+  border-radius: 12px;
 }
 
 
@@ -926,8 +929,8 @@ nav a:hover::before {
 
 
 #concept__main {
-  box-shadow: 1px 0px 7px rgba(66,68,90,0.50196);
-  box-shadow: 1px 0px 7px var(--shadow-inset);
+  border-right: 1px solid rgba(66,68,90,0.50196);
+  border-right: 1px solid var(--shadow-inset);
   padding: 5% 7.5% 7.5% 10%;
   background: rgba(179,122,73,0.12941);
   background: var(--beige-light);
@@ -962,9 +965,9 @@ nav a:hover::before {
 }
 
 
-.btn__call:focus {
+/* .btn__call:focus {
   border-radius: 9999px;
-}
+} */
 
 
 .btn__call:hover {
@@ -1014,7 +1017,9 @@ nav a:hover::before {
   padding: 2% 4%;
   color: #ffffff;
   color: var(--white);
-  transition: transform 0.5s ease;
+  transition: background-color .25s ease, .5s transform .15s ease;
+  background-color: #ffffff;
+  background-color: var(--white);
   border: 2px solid #ffffff;
   border: 2px solid var(--white);
   border-radius: 0 9999px 9999px 0;
@@ -1022,20 +1027,17 @@ nav a:hover::before {
 
 
 .btn__call:hover + #concept__call--label {
-  transition: transform 0.5s ease;
+  transition: transform .5s ease, .5s background-color .25s ease;
   transform: translate(250px, 0);
+  background-color: rgba(0,0,0,0.54118);
+  background-color: var(--shadow-dark);
 }
 
 
-.btn__call:active + #concept__call--label {
-  background: rgba(0,0,0,0.54118);
-  background: var(--shadow-dark);
-}
-
-
-#concept__gallery,
+#concept__gallery, 
+#concept__gallery--container,
 #concept__gallery--slider,
-#concept__gallery--slider img {
+#concept__gallery--wrapper {
   border-radius: 0 12px 12px 0;
 }
 
@@ -1173,6 +1175,7 @@ form .status {
   color: var(--white);
   margin: 0;
   z-index: 1;
+  overflow: hidden;
 }
 
 
@@ -1260,20 +1263,22 @@ button#concept__gallery--btn-right {
 
 #concept__gallery--slider {
   width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0,0,0,0.25098);
-  border: 1px solid var(--shadow-light);
-  border-left: 0;
-  box-shadow: 1px 0px 7px rgba(66,68,90,0.50196);
-  box-shadow: 1px 0px 7px var(--shadow-inset);
   z-index: -1;
 }
 
 
+#concept__gallery--wrapper {
+  display: flex;
+  transition: transform .5s ease;
+  height: 100%;
+  transform: translateX(0px);
+}
+
+
 #concept__gallery--slider img {
-  outline: 1px solid rgba(66,68,90,0.50196);
-  outline: 1px solid var(--shadow-inset);
   top: 0;
+  width: calc(25% + 2px);
+  height: 100%;
 }
 
 
@@ -1384,7 +1389,7 @@ button#concept__gallery--btn-right {
 #calc input[type="radio"]:checked:focus {
   outline: 2px solid #b7a393;
   outline: 2px solid var(--beige-dark);
-  border-radius: 9999px;
+  /* border-radius: 9999px; */
 }
 
 

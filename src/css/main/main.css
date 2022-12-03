@@ -256,16 +256,18 @@ nav a:hover::before {
 #concept {
   display: grid;
   justify-content: space-around;
-  height: 100%;
   grid-template-columns: auto 1fr;
-  padding: 6vw 0;
+  height: calc(100% - 12vw);
+  margin: 6vw 0;
+  box-shadow: 1px 0px 7px var(--shadow-inset);
+  border-radius: 12px;
 }
 #concept__main--container {
   margin: 0;
   z-index: 2;
 }
 #concept__main {
-  box-shadow: 1px 0px 7px var(--shadow-inset);
+  border-right: 1px solid var(--shadow-inset);
   padding: 5% 7.5% 7.5% 10%;
   background: var(--beige-light);
   width: calc(408px + 10vw);
@@ -288,9 +290,9 @@ nav a:hover::before {
   right: -34px;
   top: 6vw;
 }
-.btn__call:focus {
+/* .btn__call:focus {
   border-radius: 9999px;
-}
+} */
 .btn__call:hover {
   box-shadow: 0 4px 15px var(--shadow-light);
   animation: vibrate 0.3s ease-in-out 2;
@@ -319,21 +321,21 @@ nav a:hover::before {
   z-index: -1;
   padding: 2% 4%;
   color: var(--white);
-  transition: transform 0.5s ease;
+  transition: background-color .25s ease, .5s transform .15s ease;
+  background-color: var(--white);
   border: 2px solid var(--white);
   border-radius: 0 9999px 9999px 0;
   text-align: end;
 }
 .btn__call:hover + #concept__call--label {
-  transition: transform 0.5s ease;
+  transition: transform .5s ease, .5s background-color .25s ease;
   transform: translate(250px, 0);
+  background-color: var(--shadow-dark);
 }
-.btn__call:active + #concept__call--label {
-  background: var(--shadow-dark);
-}
-#concept__gallery,
+#concept__gallery, 
+#concept__gallery--container,
 #concept__gallery--slider,
-#concept__gallery--slider img {
+#concept__gallery--wrapper {
   border-radius: 0 12px 12px 0;
 }
 
@@ -427,6 +429,7 @@ form .status {
   color: var(--white);
   margin: 0;
   z-index: 1;
+  overflow: hidden;
 }
 #concept__gallery {
   width: 100%;
@@ -485,15 +488,18 @@ button#concept__gallery--btn-right {
 }
 #concept__gallery--slider {
   width: 100%;
-  height: 100%;
-  border: 1px solid var(--shadow-light);
-  border-left: 0;
-  box-shadow: 1px 0px 7px var(--shadow-inset);
   z-index: -1;
 }
+#concept__gallery--wrapper {
+  display: flex;
+  transition: transform .5s ease;
+  height: 100%;
+  transform: translateX(0px);
+}
 #concept__gallery--slider img {
-  outline: 1px solid var(--shadow-inset);
   top: 0;
+  width: calc(25% + 2px);
+  height: 100%;
 }
 
 /* ----------------------- calories calculator --------------------- */
@@ -566,7 +572,7 @@ button#concept__gallery--btn-right {
 }
 #calc input[type="radio"]:checked:focus {
   outline: 2px solid var(--beige-dark);
-  border-radius: 9999px;
+  /* border-radius: 9999px; */
 }
 #calc__big input {
   width: 80px;
