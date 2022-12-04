@@ -507,14 +507,17 @@
                                 <label class="flex align-center">
                                     Female
                                     <input type="radio" 
+                                           id="input__female"
                                            name="input__calc--sex"
-                                           class="relative c-pointer flex align-center js-active"
-                                           checked />
+                                           value="female"
+                                           class="relative c-pointer flex align-center" />
                                 </label>
                                 <label class="flex align-center">
                                     Male
                                     <input type="radio" 
+                                           id="input__male"
                                            name="input__calc--sex"
+                                           value="male"
                                            class="relative c-pointer flex align-center" />
                                 </label>
                             </fieldset>
@@ -526,6 +529,7 @@
                                 <label class="flex align-center">
                                     Height (cm)
                                     <input type="text"
+                                           id="input__height"
                                            name="input__calc--const-height"
                                            inputmode="numeric" 
                                            class="c-pointer flex align-center" />
@@ -533,6 +537,7 @@
                                 <label class="flex align-center">
                                     Weight (kg)
                                     <input type="text"
+                                           id="input__weight"
                                            name="input__calc--const-weight"
                                            inputmode="numeric" 
                                            class="c-pointer flex align-center" />
@@ -540,6 +545,7 @@
                                 <label class="flex align-center">
                                     Age
                                     <input type="text"
+                                           id="input__age"
                                            name="input__calc--const-age"
                                            inputmode="numeric" 
                                            class="c-pointer flex align-center" />
@@ -550,25 +556,35 @@
                                 <legend class="subtitle">
                                     Choose your physical activity
                                 </legend>
-                                <label class="flex align-center">
-                                    Low
-                                    <input type="radio" 
-                                           name="input__calc--activity"
-                                           class="relative c-pointer flex align-center" />
-                                </label>
-                                <label class="flex align-center">
-                                    Moderate
-                                    <input type="radio" 
-                                           name="input__calc--activity"
-                                           class="relative c-pointer flex align-center js-active"
-                                           checked />
-                                </label>
-                                <label class="flex align-center">
-                                    High
-                                    <input type="radio" 
-                                           name="input__calc--activity"
-                                           class="relative c-pointer flex align-center" />
-                                </label>
+                                <input type="range" 
+                                       id="input__activity" 
+                                       name="input__datalist" 
+                                       list="activity__options"
+                                       min="1.2"
+                                       max="1.9"
+                                       step="0.175" />
+                                <datalist id="activity__datalist">
+                                    <option value="1.2" 
+                                            label="Sedentary" 
+                                            class="hide">
+                                    </option>
+                                    <option value="1.375" 
+                                            label="Light Activity" 
+                                            class="hide">
+                                    </option>
+                                    <option value="1.55" 
+                                            label="Moderate Activity" 
+                                            class="hide">
+                                    </option>
+                                    <option value="1.725" 
+                                            label="High Activity" 
+                                            class="hide">
+                                    </option>
+                                    <option value="1.9" 
+                                            label="Vigorous" 
+                                            class="hide">
+                                    </option>
+                                </datalist>
                             </fieldset>
                         </form>
                         <hr>
@@ -578,7 +594,7 @@
                             <p class="subtitle">
                                 Your daily calorie rate:
                             </p>
-                            <p class="flex align-center relative">
+                            <p class="calc__result flex align-center relative">
                                 <span>2700</span>
                                  kcal
                             </p>
