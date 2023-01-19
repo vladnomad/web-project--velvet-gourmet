@@ -471,7 +471,7 @@
         width: 35px;
     }
     .btn__call {
-        z-index: 83;
+        z-index: 1;
         position: absolute;
         left: auto;
         top: auto;
@@ -530,6 +530,7 @@
     }
     #calc__total {
         width: 100%;
+        min-width: 100%;
         flex-direction: column;
     }
     #menu .bg__beige {
@@ -607,14 +608,24 @@
 
 
 @media only screen and (max-width: 429px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
     #tabmenu {
         padding: 7vh 0;
     }
+    .tab.js-active {
+        padding: 5px 0;
+    }
     .slogan {
-        margin: 20% 6%;
+        margin: 20% 0;
     }
     #marketing {
-        margin: 12.5% 0;
+        margin: 5% 0 0 0;
     }
     #offer {
         padding: 0;
@@ -623,19 +634,45 @@
         text-align: justify;
     }
     #marketing section {
-        padding: 15% 5% 0;
+        padding: 5% 0;
     }
     #timer__wrapper {
         flex-wrap: wrap;
+        gap: 4vh;
+        padding: 5vh 5.5vh 4vh 5.5vh;
+    }
+    #concept {
+        margin: 6vh 0;
+        height: calc(100% - 12vh);
+    }
+    #concept__main {
+        border-radius: 12px 12px 0 0;
     }
     #concept__main--container {
-        padding: 8vh 0 0 0;
+        padding: 0;
     }
     .btn__call {
         right: -4%;
     }
     #concept__gallery--container {
-        margin: 8vh 0;
+        margin: 0;
+    }
+    #concept__gallery--container, #concept__gallery, #concept__gallery--slider, #concept__gallery--slider img {
+        border-radius: 0 0 12px 12px;
+    }
+    #concept__gallery--counter {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        right: 69%;
+        width: 12vh;
+        padding: 0 0 2vh 0;
+        margin: -0.5vh 0 0 0;
+        background: var(--shadow-light);
+        border-radius: 0 0.5vh 24px 0;
+    }
+    #modal {
+        z-index: 2;
     }
     .modal__container {
         min-width: 90%;
@@ -654,6 +691,23 @@
     }
     #calc__big {
         flex-direction: column;
+    }
+    #calc #calc__medium {
+        width: 75%;
+        padding: 5.25vw 1vw .5vw 1vw;
+    }
+    #calc input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+    }
+    #calc__total {
+        margin: 2% auto 8% auto;
+    }
+    #menu__label {
+        padding: 4vh 0 0 0;
+    }
+    #menu__wrapper {
+        padding: 4vh;
     }
     footer .container {
         flex-direction: column-reverse;
