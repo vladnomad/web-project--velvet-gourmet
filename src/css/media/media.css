@@ -335,8 +335,7 @@
     }
     #tabmenu {
         padding: 7vh 7vh 0 7vh;
-        height: calc(96vh - 100px);
-        margin-bottom: 3vh;
+        margin-bottom: 90px;
     }
     #tabmenu .bg__beige {
         width: 50vw;
@@ -361,9 +360,6 @@
     }
     .tabpanel img {
         border-radius: 12px;
-    }
-    #tabmenu .container {
-        height: 66vh;
     }
     #tablist__wrapper {
         color: var(--white-opaque);
@@ -428,8 +424,8 @@
     }
     #timer__wrapper {
         margin-top: 0;
-        gap: 4vh;
-        padding: 3vh;
+        gap: 25px;
+        padding: 20px 20px 0 20px;
     }
     hr {
         width: 108%;
@@ -616,7 +612,7 @@
         overflow-x: hidden;
     }
     #tabmenu {
-        padding: 7vh 0;
+        padding: 60px 0;
     }
     .tab.js-active {
         padding: 5px 0;
@@ -625,7 +621,7 @@
         margin: 20% 0;
     }
     #marketing {
-        margin: 5% 0 0 0;
+        margin: 15px 0 35px 0;
     }
     #offer {
         padding: 0;
@@ -634,16 +630,15 @@
         text-align: justify;
     }
     #marketing section {
-        padding: 5% 0;
+        padding: 0;
     }
     #timer__wrapper {
         flex-wrap: wrap;
-        gap: 4vh;
-        padding: 5vh 5.5vh 4vh 5.5vh;
+        justify-content: space-evenly;
     }
     #concept {
-        margin: 6vh 0;
-        height: calc(100% - 12vh);
+        margin: 42px 0;
+        height: calc(100% - 84px);
     }
     #concept__main {
         border-radius: 12px 12px 0 0;
@@ -661,15 +656,17 @@
         border-radius: 0 0 12px 12px;
     }
     #concept__gallery--counter {
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
-        right: 69%;
-        width: 12vh;
-        padding: 0 0 2vh 0;
-        margin: -0.5vh 0 0 0;
+        display: flex; /* check with utility */
+        align-items: center; /* check with utility */
+        justify-content: center; /* check with utility */
+        right: 70%;
+        width: 30%;
+        padding: 0 4% 2% 2%;
         background: var(--shadow-light);
-        border-radius: 0 0.5vh 24px 0;
+        border-radius: 0 0 24px 0;
+    }
+    #slide__current {
+        top: 50%;
     }
     #modal {
         z-index: 2;
@@ -678,13 +675,13 @@
         min-width: 90%;
     }
     #calc {
-        padding: 7vh 0 8vh 0;
+        padding: 40px 0 55px 0;
     }
     #calc__label {
-        margin: 0 4vh;
+        margin: 0 25px;
     }
     #calc__wrapper {
-        margin-top: 4vh;
+        margin-top: 25px;
     }
     #calc legend {
         padding: 0 8px;
@@ -704,10 +701,10 @@
         margin: 2% auto 8% auto;
     }
     #menu__label {
-        padding: 4vh 0 0 0;
+        padding: 35px 0 0 0;
     }
     #menu__wrapper {
-        padding: 4vh;
+        padding: 40px;
     }
     footer .container {
         flex-direction: column-reverse;
@@ -717,17 +714,14 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        gap: 0.5vh 2vh;
-        margin: 0 auto;
+        gap: 10px 30px;
     }
     .social {
         flex-direction: row;
-        align-items: center;
-        margin: 1vh 0 3vh 0;
         flex-wrap: wrap;
-        padding: 0 5vh;
-        gap: 0.5vh 2vh;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 20px 30px 20px;
     }
     .copyright p {
         margin: 0;
@@ -747,14 +741,8 @@
     .slogan {
         margin: 15% 0;
     }
-    #tabmenu {
-        height: calc(110vh - 100px);
-    }
-    #tabmenu .container {
-        height: 70vh;
-    }
     #tablist__label {
-        top: -20%;
+        top: -100px;
     }
     #offer {
         width: auto;
@@ -763,15 +751,9 @@
     #concept__gallery {
         height: 90vh;
     }
-    #marketing section {
-        padding: 6vw 0 0 0;
-    }
-    #concept__main--container {
-        padding: 10vh 0 0 0;
-    }
     .modal__container {
-        margin: 16.5vh auto;
-        height: 67vh;
+        margin: 16.5dvh auto;
+        height: 67dvh;
     }
     #calc__label {
         margin: 0;

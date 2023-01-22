@@ -89,7 +89,7 @@ nav a:hover::before {
 /* ------------------------- tabmenu section ----------------------- */
 
 #tabmenu {
-  padding: 5.75% 0 12.5%;
+  padding: 4% 0 8.5%;
   margin-bottom: 3vw;
 }
 #tabmenu .bg__beige {
@@ -100,7 +100,7 @@ nav a:hover::before {
   right: -17.45vw;
 }
 #tabmenu .container {
-  height: 65vh;
+  height: 600px;
 }
 #tabmenu__wrapper {
   margin: 0 auto;
@@ -263,7 +263,6 @@ nav a:hover::before {
   border-radius: 12px;
 }
 #concept__main--container {
-  margin: 0;
   z-index: 2;
 }
 #concept__main {
@@ -432,7 +431,7 @@ form .status {
   width: 100%;
 }
 #concept__gallery--counter {
-  right: 3vh;
+  right: 25px;
 }
 #slide__current {
   top: 8px;
@@ -830,7 +829,6 @@ footer .container {
 }
 .copyright a::before,
 .social a span::before {
-  left: 0;
   transition: transform 0.4s ease-in-out;
   background: var(--purple-border);
   transform-origin: 0;
