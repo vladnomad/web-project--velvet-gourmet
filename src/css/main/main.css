@@ -347,9 +347,9 @@ nav a:hover::before {
   background: var(--shadow-dark);
 }
 .modal__container {
-  width: 29vw;
-  min-width: 29em;
-  margin: 33vh auto;
+  min-width: 30em;
+  min-height: 30em;
+  margin: calc(calc(100dvh - 30em) / 2) calc(calc(100vw - 30em) / 2);
 }
 .modal__wrapper {
   width: 100%;

@@ -672,7 +672,12 @@
         z-index: 2;
     }
     .modal__container {
-        min-width: 90%;
+        min-width: 90vw;
+        min-height: 64.5dvh;
+        margin: 17.75dvh 5vw;
+    }
+    .modal__wrapper {
+        padding: 25px;
     }
     #calc {
         padding: 40px 0 55px 0;
