@@ -1063,9 +1063,10 @@ nav a:hover::before {
 
 
 .modal__container {
-  width: 29vw;
-  min-width: 29em;
-  margin: 33vh auto;
+  min-width: 30em;
+  min-height: 30em;
+  margin: calc((100dvh - 30em) / 2) calc((100vw - 30em) / 2);
+  margin: calc(calc(100dvh - 30em) / 2) calc(calc(100vw - 30em) / 2);
 }
 
 
@@ -2575,7 +2576,12 @@ footer input {
         z-index: 2;
     }
     .modal__container {
-        min-width: 90%;
+        min-width: 90vw;
+        min-height: 64.5dvh;
+        margin: 17.75dvh 5vw;
+    }
+    .modal__wrapper {
+        padding: 25px;
     }
     #calc {
         padding: 40px 0 55px 0;
