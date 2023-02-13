@@ -69,7 +69,7 @@ function cards() {
         }
     }
 
-    getResource("http://localhost:3000/menu")
+    getResource("./menu")
     .then(data => {
         data.forEach(({num, alt, title, descr, price}) => {
             new MenuCard(num, alt, title, descr, price, "#menu__wrapper .container", "menu__item", `num--${num}`)

@@ -1,10 +1,9 @@
 # Catering web project
 
-A one page catering web project as a part of the practical part of a JavaScript course.
-I had made multiple changes to the project's HTML, CSS and file structure before implementing JavaScript.
+A catering website project with a timer, modal windows and user input forms, image gallery with a slider, calorie calculator with local storage and dynamically generated menu cards.
+Originally, a part of the practical JavaScript course but with multiple personal changes to the project's HTML, CSS and file structure.
 
-View the website on [Github Pages](https://vladnomad.github.io/web-project--velvet-gourmet/public/index.html) 
-(For server side functionality, download and run with a JSON server)
+View the website on [Github Pages](https://vladnomad.github.io/web-project--velvet-gourmet/public/index.html)
 
 ### Significant changes:
 
@@ -55,7 +54,7 @@ Returns from last to first, shows what image you are on.
 
 #### Calorie calculator
 
-Utilizes an actual formula for calculating daily calorie rate based on height, weight, age and activity. Refreshes upon each value change and uses localstorage to save data entered by the user. 
+Utilizes a real formula for calculating daily calorie rate based on height, weight, age and activity. Refreshes upon each value change and uses localstorage to save data entered by the user. 
 
 ## HTML
 
