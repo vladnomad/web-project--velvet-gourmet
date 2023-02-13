@@ -30,7 +30,7 @@ function server(formSelector) {
 
             const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-            postData("http://localhost:3000/requests", json)
+            postData("./requests", json)
             .then(data => {
                 console.log(data);
                 showStatusModal(message.success);

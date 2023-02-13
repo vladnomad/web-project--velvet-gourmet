@@ -5,7 +5,8 @@
   "scripts": {
     "postcss": "postcss src/css/styles.css --dir public",
     "webpack": "webpack",
-    "json": "json-server db.json"
+    "json": "json-server db.json",
+    "start": "node ./public/main.js"
   },
   "keywords": [],
   "author": "vladnomad",
