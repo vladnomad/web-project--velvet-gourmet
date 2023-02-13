@@ -1,14 +1,17 @@
 
-const jsonServer = require('json-server'),
-      server = jsonServer.create(),
-      router = jsonServer.router('db.json'),
-      middlewares = jsonServer.defaults();
+require('dotenv').config();
+const http = require('http');
 
-server.use(middlewares);
-server.use(router);
+const port = parseInt(process.env.PORT, 10) || 4000;
+const name = process.env.MYNAME || "User"
 
-const port = process.env.PORT || 4000;
+http.createServer((request, response) => {
+    response.writeHead(200, {
+        'Content-Type': 'text/plain'
+    });
 
-server.listen(port, () => {
-    console.log(`JSON Server is running on port ${port}`)
-});
+    response.write('Hello, ' + name + '!');
+
+    response.end();
+
+}).listen(port);
