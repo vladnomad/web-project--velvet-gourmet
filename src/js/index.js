@@ -9,7 +9,7 @@ import calc   from "./modules/calc";
 
 window.addEventListener("DOMContentLoaded", () => {
     tabs(".tab", ".tabpanel", ".tablist", "js-active");
-    timer("timer__wrapper", "March 1 2023 00:00:00 GMT+0100");
+    timer("timer__wrapper", "August 26 2023 00:00:00 GMT+0100");
     modal("[data-modal]", "modal");
     cards();
     server("form");
