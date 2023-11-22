@@ -1,4 +1,12 @@
 /*-------------------------- media queries --------------------------*/
+
+@media screen and (hover: hover) {
+    .menu__item:hover {
+        transform: translate3d(0, 0, 1em);
+        transition: transform 0.3s ease;
+    }
+}
+
 /*---------------------------- TV -- 2k -----------------------------*/
 
 
@@ -552,6 +560,7 @@
     }
     .menu__item {
         max-height: 65vh;
+        min-height: 82vh;
     }
     footer .container {
         flex-direction: row;
@@ -770,7 +779,7 @@
     }  
     .menu__item,
     .bg__shadow {
-        min-width: 350px;
+        min-width: 300px;
     }
     .menu__item hr {
         z-index: 1;
