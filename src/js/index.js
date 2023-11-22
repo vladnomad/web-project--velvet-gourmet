@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const deadline = lastDayOfCurrentMonth.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }) + " " + lastDayOfCurrentMonth.toTimeString().split(" ")[0] + " GMT+0100";
 
-    tabs(".tab", ".tabpanel", ".tablist", "js-active");
+    tabs(".tab", ".tabpanel", ".tablist", "js-active", ".tablist__btn", "has-menu-open", ".tablist__icon");
     timer("timer__wrapper", deadline);
     modal("[data-modal]", "modal");
     cards();

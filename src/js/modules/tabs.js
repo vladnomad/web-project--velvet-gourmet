@@ -1,23 +1,25 @@
-function tabs(tabSelector, tabPanelSelector, tabListSelector, activeClass) {
+function tabs(tabSelector, tabPanelSelector, tabListSelector, activeClass, tabListBtnSelector, menuOpenClass, tabListIconSelector) {
     
-    let tab = document.querySelectorAll(tabSelector),
-        tabPanel = document.querySelectorAll(tabPanelSelector),
-        tabList = document.querySelector(tabListSelector);
+    const tabs = document.querySelectorAll(tabSelector),
+          tabPanels = document.querySelectorAll(tabPanelSelector),
+          tabList = document.querySelector(tabListSelector),
+          tabListBtn = document.querySelector(tabListBtnSelector),
+          tabListIcon = document.querySelector(tabListIconSelector);
 
     function hideTabPanel() {
-        tabPanel.forEach(item => {
+        tabPanels.forEach(item => {
             item.classList.add("invisible", "fade-out");
             item.classList.remove("flex", "fade-in");
         });
-        tab.forEach(item => {
+        tabs.forEach(item => {
             item.classList.remove(activeClass);
         });
     }
 
     function showTabPanel(i = 0) {
-        tabPanel[i].classList.add("flex", "fade-in");
-        tabPanel[i].classList.remove("invisible", "fade-out");
-        tab[i].classList.add(activeClass);
+        tabPanels[i].classList.add("flex", "fade-in");
+        tabPanels[i].classList.remove("invisible", "fade-out");
+        tabs[i].classList.add(activeClass);
     }
 
     hideTabPanel();
@@ -27,13 +29,27 @@ function tabs(tabSelector, tabPanelSelector, tabListSelector, activeClass) {
         const target = event.target;
 
         if (target && target.classList.contains(tabSelector.slice(1))) {
-            tab.forEach((item, i) => {
+            tabs.forEach((item, i) => {
+                item.classList.remove(menuOpenClass);
+                tabListIcon.classList.remove(menuOpenClass);
                 if (target == item) {
                     hideTabPanel();
                     showTabPanel(i);
                 }
             });
         }
+    });
+
+    tabListBtn.addEventListener("click", () => {
+        tabs.forEach(item => {
+            if (item.classList.contains(menuOpenClass)) {
+                item.classList.remove(menuOpenClass);
+                tabListIcon.classList.remove(menuOpenClass);
+            } else {
+                item.classList.add(menuOpenClass);
+                tabListIcon.classList.add(menuOpenClass);
+            }
+        });
     });
 }
 

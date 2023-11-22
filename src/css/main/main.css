@@ -135,6 +135,9 @@ nav a:hover::before {
   border-left: 1px solid var(--black);
   flex-direction: column;
 }
+.tablist__btn {
+  display: none;
+}
 .tab {
   font-weight: 400;
   margin-bottom: 10px;
