@@ -374,6 +374,14 @@ h1,
 }
 
 
+@media only screen and (max-width: 391px) {
+  h1 {
+    font-size: 25px;
+    font-size: var(--medium-4k);
+  }
+}
+
+
 @media only screen and (max-width: 376px) {
   footer a,
   footer label,
@@ -387,10 +395,6 @@ h1,
   .menu__item--price p {
     font-size: 18px;
     font-size: var(--small);
-  }
-  h1 {
-    font-size: 25px;
-    font-size: var(--medium-4k);
   }
 }
 
@@ -2258,6 +2262,12 @@ footer input {
 
 
 @media only screen and (max-width: 811px) {
+    #concept, #calc {
+        width: calc(100% + 18vw);
+        left: -8.9vw;
+        position: relative;
+        margin: 0;
+    }
     header {
         height: 100px;
     }
@@ -2344,8 +2354,8 @@ footer input {
         visibility: hidden;
         color: #b7a393;
         color: var(--beige-dark);
-        background: rgba(0,0,0,0.54118);
-        background: var(--shadow-dark);
+        background: rgba(0,0,0,0.25098);
+        background: var(--shadow-light);
         border-radius: 12px 12px 0 0;
         padding: 15px 0 20px;
         margin: 0;
@@ -2408,6 +2418,9 @@ footer input {
     #concept {
         padding: 0;
         grid-template-columns: auto;
+        margin: 42px 0;
+        height: calc(100% - 84px);
+        border-radius: 0;
     }
     #concept__main {
         margin-bottom: 0;
@@ -2462,6 +2475,12 @@ footer input {
         margin: 0;
         padding: 8vh 7vh;
     }
+    #calc__label {
+        padding: 0 8.9vw 20px;
+    }
+    #calc__wrapper {
+        padding-top: 1.5rem;
+    }
     #calc fieldset {
         width: 75%;
     }
@@ -2511,20 +2530,36 @@ footer input {
     #menu__label {
         padding: 6vh 0 0 0;
     }
+    #menu__label::after {
+        content: "\27F7";
+        font-size: 1.25rem;
+        position: absolute;
+        top: 59px;
+        left: 48%;
+        opacity: .8;
+        color: rgba(0,0,0,0.54118);
+        color: var(--shadow-dark);
+    }
     #menu__wrapper {
-        padding: 6vh 0;
+        padding: 40px;
+        overflow-x: scroll;
     }
     #menu .container {
         flex-direction: row;
-        width: calc(300vw + 140px);
+        width: 260vw;
+        overflow-x: scroll;
+        gap: 0 20px;
+        justify-content: flex-start;
+        max-width: 260vw;
+        border-radius: 12px;
     }
     .menu__item,
     .bg__shadow {
-        min-width: 100%;
+        min-width: 420px;
     }
     .menu__item {
-        max-height: 65vh;
-        min-height: 82vh;
+        min-height: 65vh;
+        max-height: 82vh;
     }
     footer .container {
         flex-direction: row;
@@ -2574,6 +2609,39 @@ footer input {
 }
 
 
+@media screen and (min-width: 809px) and (max-width: 1079px) {
+    #concept {
+        box-shadow: none;
+    }
+    #concept__main,
+    #concept__gallery--container {
+        border-radius: 12px;
+        border: 1px solid rgba(66,68,90,0.50196);
+        border: 1px solid var(--shadow-inset);
+    }
+    #tablist__label {
+        top: -23%;
+    }
+    #tabmenu section[role="tablist"] {
+        width: 102%;
+        top: calc(-27% - 5px);
+        left: -1%;
+    }
+    #tabmenu {
+        margin-bottom: 240px;
+    }
+    #marketing {
+        margin: 10% 0 15%;
+    }
+    #menu .container {
+        width: 166vw;
+    }
+    #menu__label::after {
+        top: 95px;
+    }
+}
+
+
 /*------------------- Mobile - iPhone 12/13 Pro Max -----------------*/
 
 
@@ -2588,6 +2656,9 @@ footer input {
     hr {
         display: none;
     }
+    .menu__item hr {
+        display: block;
+    }
     #tabmenu {
         padding: 60px 0;
     }
@@ -2599,6 +2670,7 @@ footer input {
     }
     #offer {
         padding: 0;
+        margin-bottom: 40px;
     }
     #offer p {
         text-align: justify;
@@ -2609,13 +2681,6 @@ footer input {
     #timer__wrapper {
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
-    #concept {
-        margin: 42px 0;
-        height: calc(100% - 84px);
-        width: calc(100% + 18vw);
-        left: -8.9vw;
-        border-radius: 0;
     }
     #concept__main {
         padding: 6vw 10vw;
@@ -2634,9 +2699,9 @@ footer input {
         border-radius: 0;
     }
     #concept__gallery--counter {
-        display: flex; /* check with utility */
-        align-items: center; /* check with utility */
-        justify-content: center; /* check with utility */
+        display: flex;
+        align-items: center;
+        justify-content: center;
         right: 70%;
         width: 30%;
         padding: 0 4% 2% 2%;
@@ -2659,12 +2724,15 @@ footer input {
         padding: 25px;
     }
     #calc {
-        padding: 40px 0 55px 0;
+        padding: 20px 0 55px 0;
     }
     #calc__label {
         margin: 0 25px;
     }
     #calc__wrapper {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
         margin-top: 25px;
     }
     #calc legend {
@@ -2684,11 +2752,14 @@ footer input {
     #calc__total {
         margin: 2% auto 8% auto;
     }
+    #menu .bg__beige {
+        display: none;
+    }
     #menu__label {
         padding: 35px 0 0 0;
     }
-    #menu__wrapper {
-        padding: 40px;
+    .menu__item {
+        min-height: 82vh;
     }
     footer .container {
         flex-direction: column-reverse;

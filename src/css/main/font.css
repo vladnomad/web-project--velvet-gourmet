@@ -176,6 +176,12 @@ h1,
   }
 }
 
+@media only screen and (max-width: 391px) {
+  h1 {
+    font-size: var(--medium-4k);
+  }
+}
+
 @media only screen and (max-width: 376px) {
   footer a,
   footer label,
@@ -187,8 +193,5 @@ h1,
   .menu__item h3,
   .menu__item--price p {
     font-size: var(--small);
-  }
-  h1 {
-    font-size: var(--medium-4k);
   }
 }
